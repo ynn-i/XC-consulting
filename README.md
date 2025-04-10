@@ -1,4 +1,4 @@
-# 이모션글로벌 컨설팅 연구방법론 <br>
+# 이모션글로벌 컨설팅 연구방법론 (XC-consulting)
 
 Puzzle piece : research methodology <br>
 이모션글로벌 컨설팅 연구방법론 문서입니다.
