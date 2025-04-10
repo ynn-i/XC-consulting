@@ -1,0 +1,517 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  line-height: 1.5;
+  color: #4a4a4a;
+}
+
+.main-title {
+  padding: 120px 120px;
+}
+.main-title h2 {
+  font-family: "PP Hatton", serif;
+  font-size: 72px;
+  color: #000000;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.main-title p {
+  font-family: "Pretendard", sans-serif;
+  font-size: 24px;
+  color: #666666;
+  margin-top: 20px;
+}
+
+.container {
+  max-width: 1680px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.header {
+  background-color: #ffffff;
+  border-bottom: #ddd 1px solid;
+  border-top: #ddd 1px solid;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 0 120px;
+}
+
+.nav {
+  padding: 1rem 0;
+}
+.nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #000000;
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #666666;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.nav-links a:hover {
+  color: #000000;
+}
+
+section {
+  padding: 4rem 0;
+}
+section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #000000;
+}
+
+.understanding {
+  padding: 6rem 0;
+}
+.understanding h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+.understanding > .container > p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666666;
+  max-width: 800px;
+  margin: 0 auto 4rem;
+}
+.understanding .sub-section {
+  margin-bottom: 5rem;
+}
+.understanding .sub-section h3 {
+  font-size: 2rem;
+  color: #000000;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+.understanding .sub-section h3:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background-color: #000000;
+}
+.understanding .sub-section p {
+  font-size: 1.1rem;
+  color: #666666;
+  margin-bottom: 2rem;
+}
+.understanding .content-box {
+  background-color: #f5f5f5;
+  padding: 2rem;
+  border-radius: 8px;
+  border-left: 4px solid #000000;
+}
+.understanding .content-box h4 {
+  font-size: 1.3rem;
+  color: #000000;
+  margin-bottom: 1.5rem;
+}
+.understanding .content-box ul {
+  list-style: none;
+}
+.understanding .content-box ul li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+.understanding .content-box ul li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #000000;
+  font-weight: bold;
+}
+
+.discover {
+  padding: 6rem 0;
+}
+.discover h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+.discover > .container > p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666666;
+  max-width: 800px;
+  margin: 0 auto 4rem;
+}
+.discover .sub-section {
+  margin-bottom: 5rem;
+}
+.discover .sub-section h3 {
+  font-size: 2rem;
+  color: #000000;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+.discover .sub-section h3:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background-color: #000000;
+}
+.discover .sub-section p {
+  font-size: 1.1rem;
+  color: #666666;
+  margin-bottom: 2rem;
+}
+.discover .content-box {
+  background-color: #f5f5f5;
+  padding: 2rem;
+  border-radius: 8px;
+  border-left: 4px solid #000000;
+}
+.discover .content-box h4 {
+  font-size: 1.3rem;
+  color: #000000;
+  margin-bottom: 1.5rem;
+}
+.discover .content-box ul {
+  list-style: none;
+}
+.discover .content-box ul li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+.discover .content-box ul li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #000000;
+  font-weight: bold;
+}
+
+.define {
+  padding: 6rem 0;
+}
+.define h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+.define > .container > p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666666;
+  max-width: 800px;
+  margin: 0 auto 4rem;
+}
+.define .sub-section {
+  margin-bottom: 5rem;
+}
+.define .sub-section h3 {
+  font-size: 2rem;
+  color: #000000;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+.define .sub-section h3:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background-color: #000000;
+}
+.define .sub-section p {
+  font-size: 1.1rem;
+  color: #666666;
+  margin-bottom: 2rem;
+}
+.define .content-box {
+  background-color: #f5f5f5;
+  padding: 2rem;
+  border-radius: 8px;
+  border-left: 4px solid #000000;
+}
+.define .content-box h4 {
+  font-size: 1.3rem;
+  color: #000000;
+  margin-bottom: 1.5rem;
+}
+.define .content-box ul {
+  list-style: none;
+}
+.define .content-box ul li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+.define .content-box ul li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #000000;
+  font-weight: bold;
+}
+
+.develop {
+  padding: 6rem 0;
+}
+.develop h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+.develop > .container > p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666666;
+  max-width: 800px;
+  margin: 0 auto 4rem;
+}
+.develop .sub-section {
+  margin-bottom: 5rem;
+}
+.develop .sub-section h3 {
+  font-size: 2rem;
+  color: #000000;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+.develop .sub-section h3:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background-color: #000000;
+}
+.develop .sub-section p {
+  font-size: 1.1rem;
+  color: #666666;
+  margin-bottom: 2rem;
+}
+.develop .content-box {
+  background-color: #f5f5f5;
+  padding: 2rem;
+  border-radius: 8px;
+  border-left: 4px solid #000000;
+}
+.develop .content-box h4 {
+  font-size: 1.3rem;
+  color: #000000;
+  margin-bottom: 1.5rem;
+}
+.develop .content-box ul {
+  list-style: none;
+}
+.develop .content-box ul li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+.develop .content-box ul li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #000000;
+  font-weight: bold;
+}
+
+.deliver {
+  padding: 6rem 0;
+}
+.deliver h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+.deliver > .container > p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666666;
+  max-width: 800px;
+  margin: 0 auto 4rem;
+}
+.deliver .sub-section {
+  margin-bottom: 5rem;
+}
+.deliver .sub-section h3 {
+  font-size: 2rem;
+  color: #000000;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+.deliver .sub-section h3:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background-color: #000000;
+}
+.deliver .sub-section p {
+  font-size: 1.1rem;
+  color: #666666;
+  margin-bottom: 2rem;
+}
+.deliver .content-box {
+  background-color: #f5f5f5;
+  padding: 2rem;
+  border-radius: 8px;
+  border-left: 4px solid #000000;
+}
+.deliver .content-box h4 {
+  font-size: 1.3rem;
+  color: #000000;
+  margin-bottom: 1.5rem;
+}
+.deliver .content-box ul {
+  list-style: none;
+}
+.deliver .content-box ul li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+.deliver .content-box ul li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #000000;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .content-wrapper {
+    flex-direction: column;
+  }
+  .lnb {
+    width: 100%;
+    position: relative;
+    top: 0;
+    height: auto;
+    max-height: none;
+    margin: 20px;
+    overflow-y: visible;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .main-content {
+    margin-left: 0;
+    padding: 20px;
+  }
+  .main-title {
+    padding: 60px 20px;
+  }
+  .main-title h2 {
+    font-size: 48px;
+  }
+  .main-title p {
+    font-size: 18px;
+  }
+  .header {
+    padding: 0 20px;
+  }
+  section {
+    padding: 3rem 0;
+  }
+  .sub-section {
+    margin-bottom: 3rem;
+  }
+}
+.content-wrapper {
+  display: flex;
+  position: relative;
+}
+
+.lnb {
+  width: 320px;
+  background-color: #ffffff;
+  position: sticky;
+  top: 120px;
+  height: calc(100vh - 120px - 80px);
+  padding: 60px 0 60px 120px;
+  overflow-y: auto;
+  max-height: calc(100vh - 120px - 80px);
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.lnb::-webkit-scrollbar {
+  display: none;
+}
+.lnb ul {
+  list-style: none;
+  margin-bottom: 40px;
+}
+.lnb a {
+  display: block;
+  color: #666666;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.lnb .menu-item {
+  position: relative;
+  font-weight: 500;
+}
+.lnb .menu-item > a {
+  font-size: 13px;
+  color: #b5b5b5;
+  margin-bottom: 12px;
+}
+.lnb .menu-item .submenu li {
+  margin-bottom: 4px;
+}
+.lnb .menu-item .submenu li a {
+  font-weight: 500;
+  font-size: 14px;
+  color: #000000;
+}
+.lnb .menu-item .submenu li a.active {
+  color: #EE2C3C;
+  font-weight: 600;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: 20px;
+  padding-right: 20px;
+}
+
+/*# sourceMappingURL=main.css.map */
