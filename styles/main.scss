@@ -45,7 +45,6 @@ body {
     color: $primary-color;
     font-weight: 400;
     line-height: 1.2;
-    display: none;
   }
 
   p {
@@ -114,6 +113,7 @@ section {
     text-align: center;
     margin-bottom: 2rem;
     color: $primary-color;
+    display: none;
   }
 }
 
@@ -121,10 +121,10 @@ section {
 .understanding {
   padding: 6rem 0;
   
-  h2 {
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
-  }
+  // h2 {
+  //   font-size: 3rem;
+  //   margin-bottom: 1.5rem;
+  // }
   
   > .container > p {
     text-align: center;
@@ -132,6 +132,7 @@ section {
     color: $dark-gray;
     max-width: 800px;
     margin: 0 auto 4rem;
+    display: none;
   }
   
   .sub-section {
@@ -209,6 +210,7 @@ section {
     color: $dark-gray;
     max-width: 800px;
     margin: 0 auto 4rem;
+    display: none;
   }
   
   .sub-section {
@@ -286,6 +288,7 @@ section {
     color: $dark-gray;
     max-width: 800px;
     margin: 0 auto 4rem;
+    display: none;
   }
   
   .sub-section {
@@ -363,6 +366,7 @@ section {
     color: $dark-gray;
     max-width: 800px;
     margin: 0 auto 4rem;
+    display: none;
   }
   
   .sub-section {
