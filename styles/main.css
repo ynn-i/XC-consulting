@@ -15,11 +15,12 @@ body {
   padding: 120px 120px;
 }
 .main-title h2 {
-  font-family: "PP Hatton", serif;
+  font-family: "DM Serif Display", serif;
   font-size: 72px;
   color: #000000;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.2;
+  display: none;
 }
 .main-title p {
   font-family: "Pretendard", sans-serif;
