@@ -1,3 +1,6 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
 // Variables
 $primary-color: #000000;
 $secondary-color: #333333;
@@ -22,11 +25,92 @@ $lnb-width: 320px;
   padding: 0;
 }
 
+@mixin section-base {
+  padding: 6rem 0;
+  
+  > .container > p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: $dark-gray;
+    max-width: 800px;
+    margin: 0 auto 4rem;
+  }
+}
+
+@mixin sub-section-base {
+  margin-bottom: 5rem;
+  
+  h4 {
+    font-size: 2rem;
+    color: $primary-color;
+    position: relative;
+    padding-bottom: 0.5rem;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 500;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    color: $primary-color;
+    margin-bottom: 2rem;
+    font-weight: 500;
+  }
+}
+
+@mixin content-box-base {
+  background-color: $light-gray;
+  padding: 2rem;
+  border-radius: 8px;
+  border-left: 4px solid $primary-color;
+  
+  h5 {
+    font-size: 1.3rem;
+    color: $primary-color;
+    margin-bottom: 1.5rem;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+  }
+  
+  ul {
+    list-style: none;
+    
+    li {
+      position: relative;
+      padding-left: 1.5rem;
+      margin-bottom: 1rem;
+      
+      &:before {
+        content: '•';
+        position: absolute;
+        left: 0;
+        color: $primary-color;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
 // Reset
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 body {
@@ -43,7 +127,7 @@ body {
     font-family: 'DM Serif Display', serif;
     font-size: 72px;
     color: $primary-color;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.2;
     display: block;
   }
@@ -51,7 +135,7 @@ body {
   p {
     font-family: 'Pretendard', sans-serif;
     font-size: 24px;
-    color: $dark-gray;
+    color: $primary-color;
     margin-top: 20px;
   }
 }
@@ -70,7 +154,6 @@ body {
   top: 0;
   z-index: 1000;
   padding: 0 120px;
-  // margin-top: 120px;
 }
 
 .nav {
@@ -84,9 +167,15 @@ body {
 }
 
 .logo {
-  font-size: 1.5rem;
-  color: $primary-color;
-  font-weight: 700;
+  a {
+    display: block;
+    text-decoration: none;
+  }
+  
+  img {
+    height: 24px;
+    width: auto;
+  }
 }
 
 .nav-links {
@@ -111,361 +200,66 @@ section {
   padding: 4rem 0;
 
   h3 {
-    text-align: center;
-    margin-bottom: 2rem;
-    color: $primary-color;
-    font-family: 'DM Serif Display', serif;
-    font-size: 3rem;
-    font-weight: 400;
+    display: none;
+  }
+
+  > .container > p {
+    display: none;
   }
 }
 
-// Sub-sections
-.sub-section {
-  margin-bottom: 5rem;
-  
-  h4 {
-    font-size: 2rem;
-    color: $primary-color;
-    margin-bottom: 1.5rem;
-    position: relative;
-    padding-bottom: 1rem;
-    font-family: 'DM Serif Display', serif;
-    font-weight: 400;
-    
-    &:after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 60px;
-      height: 3px;
-      background-color: $primary-color;
-    }
+// Understanding Section
+.understanding {
+  @include section-base;
+  .sub-section {
+    @include sub-section-base;
   }
-}
-
-// Content boxes
-.content-box {
-  background-color: $light-gray;
-  padding: 2rem;
-  border-radius: 8px;
-  border-left: 4px solid $primary-color;
-  
-  h5 {
-    font-size: 1.3rem;
-    color: $primary-color;
-    margin-bottom: 1.5rem;
-    font-family: 'DM Serif Display', serif;
-    font-weight: 400;
+  .content-box {
+    @include content-box-base;
   }
 }
 
 // Discover Section
 .discover {
-  padding: 6rem 0;
-  
-  h2 {
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  > .container > p {
-    text-align: center;
-    font-size: 1.2rem;
-    color: $dark-gray;
-    max-width: 800px;
-    margin: 0 auto 4rem;
-  }
-  
+  @include section-base;
   .sub-section {
-    margin-bottom: 5rem;
-    
-    h3 {
-      font-size: 2rem;
-      color: $primary-color;
-      margin-bottom: 1.5rem;
-      position: relative;
-      padding-bottom: 1rem;
-      
-      &:after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 60px;
-        height: 3px;
-        background-color: $primary-color;
-      }
-    }
-    
-    p {
-      font-size: 1.1rem;
-      color: $dark-gray;
-      margin-bottom: 2rem;
-    }
+    @include sub-section-base;
   }
-  
   .content-box {
-    background-color: $light-gray;
-    padding: 2rem;
-    border-radius: 8px;
-    border-left: 4px solid $primary-color;
-    
-    h4 {
-      font-size: 1.3rem;
-      color: $primary-color;
-      margin-bottom: 1.5rem;
-    }
-    
-    ul {
-      list-style: none;
-      
-      li {
-        position: relative;
-        padding-left: 1.5rem;
-        margin-bottom: 1rem;
-        
-        &:before {
-          content: '•';
-          position: absolute;
-          left: 0;
-          color: $primary-color;
-          font-weight: bold;
-        }
-      }
-    }
+    @include content-box-base;
   }
 }
 
 // Define Section
 .define {
-  padding: 6rem 0;
-  
-  h2 {
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  > .container > p {
-    text-align: center;
-    font-size: 1.2rem;
-    color: $dark-gray;
-    max-width: 800px;
-    margin: 0 auto 4rem;
-  }
-  
+  @include section-base;
   .sub-section {
-    margin-bottom: 5rem;
-    
-    h3 {
-      font-size: 2rem;
-      color: $primary-color;
-      margin-bottom: 1.5rem;
-      position: relative;
-      padding-bottom: 1rem;
-      
-      &:after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 60px;
-        height: 3px;
-        background-color: $primary-color;
-      }
-    }
-    
-    p {
-      font-size: 1.1rem;
-      color: $dark-gray;
-      margin-bottom: 2rem;
-    }
+    @include sub-section-base;
   }
-  
   .content-box {
-    background-color: $light-gray;
-    padding: 2rem;
-    border-radius: 8px;
-    border-left: 4px solid $primary-color;
-    
-    h4 {
-      font-size: 1.3rem;
-      color: $primary-color;
-      margin-bottom: 1.5rem;
-    }
-    
-    ul {
-      list-style: none;
-      
-      li {
-        position: relative;
-        padding-left: 1.5rem;
-        margin-bottom: 1rem;
-        
-        &:before {
-          content: '•';
-          position: absolute;
-          left: 0;
-          color: $primary-color;
-          font-weight: bold;
-        }
-      }
-    }
+    @include content-box-base;
   }
 }
 
 // Develop Section
 .develop {
-  padding: 6rem 0;
-  
-  h2 {
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  > .container > p {
-    text-align: center;
-    font-size: 1.2rem;
-    color: $dark-gray;
-    max-width: 800px;
-    margin: 0 auto 4rem;
-  }
-  
+  @include section-base;
   .sub-section {
-    margin-bottom: 5rem;
-    
-    h3 {
-      font-size: 2rem;
-      color: $primary-color;
-      margin-bottom: 1.5rem;
-      position: relative;
-      padding-bottom: 1rem;
-      
-      &:after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 60px;
-        height: 3px;
-        background-color: $primary-color;
-      }
-    }
-    
-    p {
-      font-size: 1.1rem;
-      color: $dark-gray;
-      margin-bottom: 2rem;
-    }
+    @include sub-section-base;
   }
-  
   .content-box {
-    background-color: $light-gray;
-    padding: 2rem;
-    border-radius: 8px;
-    border-left: 4px solid $primary-color;
-    
-    h4 {
-      font-size: 1.3rem;
-      color: $primary-color;
-      margin-bottom: 1.5rem;
-    }
-    
-    ul {
-      list-style: none;
-      
-      li {
-        position: relative;
-        padding-left: 1.5rem;
-        margin-bottom: 1rem;
-        
-        &:before {
-          content: '•';
-          position: absolute;
-          left: 0;
-          color: $primary-color;
-          font-weight: bold;
-        }
-      }
-    }
+    @include content-box-base;
   }
 }
 
 // Deliver Section
 .deliver {
-  padding: 6rem 0;
-  
-  h2 {
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  > .container > p {
-    text-align: center;
-    font-size: 1.2rem;
-    color: $dark-gray;
-    max-width: 800px;
-    margin: 0 auto 4rem;
-  }
-  
+  @include section-base;
   .sub-section {
-    margin-bottom: 5rem;
-    
-    h3 {
-      font-size: 2rem;
-      color: $primary-color;
-      margin-bottom: 1.5rem;
-      position: relative;
-      padding-bottom: 1rem;
-      
-      &:after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 60px;
-        height: 3px;
-        background-color: $primary-color;
-      }
-    }
-    
-    p {
-      font-size: 1.1rem;
-      color: $dark-gray;
-      margin-bottom: 2rem;
-    }
+    @include sub-section-base;
   }
-  
   .content-box {
-    background-color: $light-gray;
-    padding: 2rem;
-    border-radius: 8px;
-    border-left: 4px solid $primary-color;
-    
-    h4 {
-      font-size: 1.3rem;
-      color: $primary-color;
-      margin-bottom: 1.5rem;
-    }
-    
-    ul {
-      list-style: none;
-      
-      li {
-        position: relative;
-        padding-left: 1.5rem;
-        margin-bottom: 1rem;
-        
-        &:before {
-          content: '•';
-          position: absolute;
-          left: 0;
-          color: $primary-color;
-          font-weight: bold;
-        }
-      }
-    }
+    @include content-box-base;
   }
 }
 
@@ -552,16 +346,7 @@ section {
   }
 
   ul {
-    list-style: none;
     margin-bottom: 40px;
-  }
-
-  a {
-    display: block;
-    color: $dark-gray;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    position: relative;
   }
   
   .menu-item {
@@ -597,4 +382,36 @@ section {
   flex: 1;
   margin-left: 20px;
   padding-right: 20px;
+}
+
+// Content boxes
+.content-box {
+  background-color: $light-gray;
+  padding: 2rem;
+  border-radius: 8px;
+  border-left: 4px solid $primary-color;
+  
+  h5 {
+    font-size: 1.3rem;
+    color: $primary-color;
+    margin-bottom: 1.5rem;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+  }
+  
+  ul {
+    li {
+      position: relative;
+      padding-left: 1.5rem;
+      margin-bottom: 1rem;
+      
+      &:before {
+        content: '•';
+        position: absolute;
+        left: 0;
+        color: $primary-color;
+        font-weight: bold;
+      }
+    }
+  }
 } 

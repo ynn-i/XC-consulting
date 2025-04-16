@@ -1,8 +1,25 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 body {
@@ -18,14 +35,14 @@ body {
   font-family: "DM Serif Display", serif;
   font-size: 72px;
   color: #000000;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.2;
-  display: none;
+  display: block;
 }
 .main-title p {
   font-family: "Pretendard", sans-serif;
   font-size: 24px;
-  color: #666666;
+  color: #000000;
   margin-top: 20px;
 }
 
@@ -54,10 +71,13 @@ body {
   align-items: center;
 }
 
-.logo {
-  font-size: 1.5rem;
-  color: #000000;
-  font-weight: 700;
+.logo a {
+  display: block;
+  text-decoration: none;
+}
+.logo img {
+  height: 24px;
+  width: auto;
 }
 
 .nav-links {
@@ -78,18 +98,15 @@ body {
 section {
   padding: 4rem 0;
 }
-section h2 {
-  text-align: center;
-  margin-bottom: 2rem;
-  color: #000000;
+section h3 {
+  display: none;
+}
+section > .container > p {
+  display: none;
 }
 
 .understanding {
   padding: 6rem 0;
-}
-.understanding h2 {
-  font-size: 3rem;
-  margin-bottom: 1.5rem;
 }
 .understanding > .container > p {
   text-align: center;
@@ -101,26 +118,19 @@ section h2 {
 .understanding .sub-section {
   margin-bottom: 5rem;
 }
-.understanding .sub-section h3 {
+.understanding .sub-section h4 {
   font-size: 2rem;
   color: #000000;
-  margin-bottom: 1.5rem;
   position: relative;
-  padding-bottom: 1rem;
-}
-.understanding .sub-section h3:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 60px;
-  height: 3px;
-  background-color: #000000;
+  padding-bottom: 0.5rem;
+  font-family: "DM Serif Display", serif;
+  font-weight: 500;
 }
 .understanding .sub-section p {
   font-size: 1.1rem;
-  color: #666666;
+  color: #000000;
   margin-bottom: 2rem;
+  font-weight: 500;
 }
 .understanding .content-box {
   background-color: #f5f5f5;
@@ -128,10 +138,12 @@ section h2 {
   border-radius: 8px;
   border-left: 4px solid #000000;
 }
-.understanding .content-box h4 {
+.understanding .content-box h5 {
   font-size: 1.3rem;
   color: #000000;
   margin-bottom: 1.5rem;
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
 }
 .understanding .content-box ul {
   list-style: none;
@@ -152,10 +164,6 @@ section h2 {
 .discover {
   padding: 6rem 0;
 }
-.discover h2 {
-  font-size: 3rem;
-  margin-bottom: 1.5rem;
-}
 .discover > .container > p {
   text-align: center;
   font-size: 1.2rem;
@@ -166,26 +174,19 @@ section h2 {
 .discover .sub-section {
   margin-bottom: 5rem;
 }
-.discover .sub-section h3 {
+.discover .sub-section h4 {
   font-size: 2rem;
   color: #000000;
-  margin-bottom: 1.5rem;
   position: relative;
-  padding-bottom: 1rem;
-}
-.discover .sub-section h3:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 60px;
-  height: 3px;
-  background-color: #000000;
+  padding-bottom: 0.5rem;
+  font-family: "DM Serif Display", serif;
+  font-weight: 500;
 }
 .discover .sub-section p {
   font-size: 1.1rem;
-  color: #666666;
+  color: #000000;
   margin-bottom: 2rem;
+  font-weight: 500;
 }
 .discover .content-box {
   background-color: #f5f5f5;
@@ -193,10 +194,12 @@ section h2 {
   border-radius: 8px;
   border-left: 4px solid #000000;
 }
-.discover .content-box h4 {
+.discover .content-box h5 {
   font-size: 1.3rem;
   color: #000000;
   margin-bottom: 1.5rem;
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
 }
 .discover .content-box ul {
   list-style: none;
@@ -217,10 +220,6 @@ section h2 {
 .define {
   padding: 6rem 0;
 }
-.define h2 {
-  font-size: 3rem;
-  margin-bottom: 1.5rem;
-}
 .define > .container > p {
   text-align: center;
   font-size: 1.2rem;
@@ -231,26 +230,19 @@ section h2 {
 .define .sub-section {
   margin-bottom: 5rem;
 }
-.define .sub-section h3 {
+.define .sub-section h4 {
   font-size: 2rem;
   color: #000000;
-  margin-bottom: 1.5rem;
   position: relative;
-  padding-bottom: 1rem;
-}
-.define .sub-section h3:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 60px;
-  height: 3px;
-  background-color: #000000;
+  padding-bottom: 0.5rem;
+  font-family: "DM Serif Display", serif;
+  font-weight: 500;
 }
 .define .sub-section p {
   font-size: 1.1rem;
-  color: #666666;
+  color: #000000;
   margin-bottom: 2rem;
+  font-weight: 500;
 }
 .define .content-box {
   background-color: #f5f5f5;
@@ -258,10 +250,12 @@ section h2 {
   border-radius: 8px;
   border-left: 4px solid #000000;
 }
-.define .content-box h4 {
+.define .content-box h5 {
   font-size: 1.3rem;
   color: #000000;
   margin-bottom: 1.5rem;
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
 }
 .define .content-box ul {
   list-style: none;
@@ -282,10 +276,6 @@ section h2 {
 .develop {
   padding: 6rem 0;
 }
-.develop h2 {
-  font-size: 3rem;
-  margin-bottom: 1.5rem;
-}
 .develop > .container > p {
   text-align: center;
   font-size: 1.2rem;
@@ -296,26 +286,19 @@ section h2 {
 .develop .sub-section {
   margin-bottom: 5rem;
 }
-.develop .sub-section h3 {
+.develop .sub-section h4 {
   font-size: 2rem;
   color: #000000;
-  margin-bottom: 1.5rem;
   position: relative;
-  padding-bottom: 1rem;
-}
-.develop .sub-section h3:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 60px;
-  height: 3px;
-  background-color: #000000;
+  padding-bottom: 0.5rem;
+  font-family: "DM Serif Display", serif;
+  font-weight: 500;
 }
 .develop .sub-section p {
   font-size: 1.1rem;
-  color: #666666;
+  color: #000000;
   margin-bottom: 2rem;
+  font-weight: 500;
 }
 .develop .content-box {
   background-color: #f5f5f5;
@@ -323,10 +306,12 @@ section h2 {
   border-radius: 8px;
   border-left: 4px solid #000000;
 }
-.develop .content-box h4 {
+.develop .content-box h5 {
   font-size: 1.3rem;
   color: #000000;
   margin-bottom: 1.5rem;
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
 }
 .develop .content-box ul {
   list-style: none;
@@ -347,10 +332,6 @@ section h2 {
 .deliver {
   padding: 6rem 0;
 }
-.deliver h2 {
-  font-size: 3rem;
-  margin-bottom: 1.5rem;
-}
 .deliver > .container > p {
   text-align: center;
   font-size: 1.2rem;
@@ -361,26 +342,19 @@ section h2 {
 .deliver .sub-section {
   margin-bottom: 5rem;
 }
-.deliver .sub-section h3 {
+.deliver .sub-section h4 {
   font-size: 2rem;
   color: #000000;
-  margin-bottom: 1.5rem;
   position: relative;
-  padding-bottom: 1rem;
-}
-.deliver .sub-section h3:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 60px;
-  height: 3px;
-  background-color: #000000;
+  padding-bottom: 0.5rem;
+  font-family: "DM Serif Display", serif;
+  font-weight: 500;
 }
 .deliver .sub-section p {
   font-size: 1.1rem;
-  color: #666666;
+  color: #000000;
   margin-bottom: 2rem;
+  font-weight: 500;
 }
 .deliver .content-box {
   background-color: #f5f5f5;
@@ -388,10 +362,12 @@ section h2 {
   border-radius: 8px;
   border-left: 4px solid #000000;
 }
-.deliver .content-box h4 {
+.deliver .content-box h5 {
   font-size: 1.3rem;
   color: #000000;
   margin-bottom: 1.5rem;
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
 }
 .deliver .content-box ul {
   list-style: none;
@@ -477,15 +453,7 @@ section h2 {
   display: none;
 }
 .lnb ul {
-  list-style: none;
   margin-bottom: 40px;
-}
-.lnb a {
-  display: block;
-  color: #666666;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  position: relative;
 }
 .lnb .menu-item {
   position: relative;
@@ -513,6 +481,32 @@ section h2 {
   flex: 1;
   margin-left: 20px;
   padding-right: 20px;
+}
+
+.content-box {
+  background-color: #f5f5f5;
+  padding: 2rem;
+  border-radius: 8px;
+  border-left: 4px solid #000000;
+}
+.content-box h5 {
+  font-size: 1.3rem;
+  color: #000000;
+  margin-bottom: 1.5rem;
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+}
+.content-box ul li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+.content-box ul li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #000000;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=main.css.map */
