@@ -45,6 +45,7 @@ body {
     color: $primary-color;
     font-weight: 400;
     line-height: 1.2;
+    display: block;
   }
 
   p {
@@ -109,7 +110,7 @@ body {
 section {
   padding: 4rem 0;
 
-  h2 {
+  h3 {
     text-align: center;
     margin-bottom: 2rem;
     color: $primary-color;
@@ -119,84 +120,44 @@ section {
   }
 }
 
-// Understanding Section
-.understanding {
-  padding: 6rem 0;
+// Sub-sections
+.sub-section {
+  margin-bottom: 5rem;
   
-  // h2 {
-  //   font-size: 3rem;
-  //   margin-bottom: 1.5rem;
-  // }
-  
-  > .container > p {
-    text-align: center;
-    font-size: 1.2rem;
-    color: $dark-gray;
-    max-width: 800px;
-    margin: 0 auto 4rem;
-  }
-  
-  .sub-section {
-    margin-bottom: 5rem;
+  h4 {
+    font-size: 2rem;
+    color: $primary-color;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 1rem;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
     
-    h3 {
-      font-size: 2rem;
-      color: $primary-color;
-      margin-bottom: 1.5rem;
-      position: relative;
-      padding-bottom: 1rem;
-      font-family: 'DM Serif Display', serif;
-      font-weight: 400;
-      
-      &:after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 60px;
-        height: 3px;
-        background-color: $primary-color;
-      }
-    }
-    
-    p {
-      font-size: 1.1rem;
-      color: $dark-gray;
-      margin-bottom: 2rem;
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background-color: $primary-color;
     }
   }
+}
+
+// Content boxes
+.content-box {
+  background-color: $light-gray;
+  padding: 2rem;
+  border-radius: 8px;
+  border-left: 4px solid $primary-color;
   
-  .content-box {
-    background-color: $light-gray;
-    padding: 2rem;
-    border-radius: 8px;
-    border-left: 4px solid $primary-color;
-    
-    h4 {
-      font-size: 1.3rem;
-      color: $primary-color;
-      margin-bottom: 1.5rem;
-      font-family: 'DM Serif Display', serif;
-      font-weight: 400;
-    }
-    
-    ul {
-      list-style: none;
-      
-      li {
-        position: relative;
-        padding-left: 1.5rem;
-        margin-bottom: 1rem;
-        
-        &:before {
-          content: '•';
-          position: absolute;
-          left: 0;
-          color: $primary-color;
-          font-weight: bold;
-        }
-      }
-    }
+  h5 {
+    font-size: 1.3rem;
+    color: $primary-color;
+    margin-bottom: 1.5rem;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
   }
 }
 
