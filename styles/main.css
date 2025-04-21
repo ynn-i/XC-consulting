@@ -106,7 +106,7 @@ section > .container > p {
 }
 
 .understanding {
-  padding: 6rem 0;
+  padding: 60px 0;
 }
 .understanding > .container > p {
   text-align: center;
@@ -162,7 +162,7 @@ section > .container > p {
 }
 
 .discover {
-  padding: 6rem 0;
+  padding: 60px 0;
 }
 .discover > .container > p {
   text-align: center;
@@ -218,7 +218,7 @@ section > .container > p {
 }
 
 .define {
-  padding: 6rem 0;
+  padding: 60px 0;
 }
 .define > .container > p {
   text-align: center;
@@ -274,7 +274,7 @@ section > .container > p {
 }
 
 .develop {
-  padding: 6rem 0;
+  padding: 60px 0;
 }
 .develop > .container > p {
   text-align: center;
@@ -330,7 +330,7 @@ section > .container > p {
 }
 
 .deliver {
-  padding: 6rem 0;
+  padding: 60px 0;
 }
 .deliver > .container > p {
   text-align: center;
@@ -441,11 +441,11 @@ section > .container > p {
   width: 320px;
   background-color: #ffffff;
   position: sticky;
-  top: 120px;
-  height: calc(100vh - 120px - 80px);
+  top: 60px;
+  height: calc(100vh - 60px - 80px);
   padding: 60px 0 60px 120px;
   overflow-y: auto;
-  max-height: calc(100vh - 120px - 80px);
+  max-height: calc(100vh - 60px - 80px);
   scrollbar-width: none;
   -ms-overflow-style: none;
 }

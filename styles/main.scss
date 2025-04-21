@@ -26,7 +26,7 @@ $lnb-width: 320px;
 }
 
 @mixin section-base {
-  padding: 6rem 0;
+  padding: 60px 0;
   
   > .container > p {
     text-align: center;
@@ -333,11 +333,11 @@ section {
   width: $lnb-width;
   background-color: $white;
   position: sticky;
-  top: calc(120px);
-  height: calc(100vh - 120px - 80px);
+  top: calc(60px);
+  height: calc(100vh - 60px - 80px);
   padding: 60px 0 60px 120px;
   overflow-y: auto;
-  max-height: calc(100vh - 120px - 80px);
+  max-height: calc(100vh - 60px - 80px);
   scrollbar-width: none;
   -ms-overflow-style: none;
   
