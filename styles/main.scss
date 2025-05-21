@@ -15,6 +15,56 @@
 @import 'layout/header';
 @import 'layout/navigation';
 @import 'layout/sections';
+@import 'layout/content';
+
+// Pages
+@import 'pages/main';
 
 // Utilities
 @import 'utilities/responsive';
+
+// Main Title
+.main-title {
+  padding: 120px 120px;
+  
+  h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 72px;
+    color: $primary-color;
+    font-weight: 500;
+    line-height: 1.2;
+    display: block;
+  }
+
+  p {
+    font-family: 'Pretendard', sans-serif;
+    font-size: 24px;
+    color: $primary-color;
+    margin-top: 20px;
+  }
+}
+
+// Content Wrapper
+.content-wrapper {
+  display: flex;
+  position: relative;
+  max-width: $max-width;
+  margin: 0 auto;
+  padding-right: 120px;
+}
+
+// Main Content
+.main-content {
+  flex: 1;
+  margin-left: 20px;
+  padding: 0 20px;
+  min-width: 0; // Prevent flex item from overflowing
+}
+
+// Footer
+.footer {
+  background-color: $primary-color;
+  color: $white;
+  padding: 2rem 0;
+  text-align: center;
+}
