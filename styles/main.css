@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
 * {
   margin: 0;
@@ -8,6 +7,8 @@
 
 ul, ol {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 a {
@@ -28,28 +29,19 @@ body {
   color: #4a4a4a;
 }
 
-.main-title {
-  padding: 120px 120px;
-}
-.main-title h2 {
-  font-family: "DM Serif Display", serif;
-  font-size: 72px;
-  color: #000000;
-  font-weight: 500;
-  line-height: 1.2;
-  display: block;
-}
-.main-title p {
-  font-family: "Pretendard", sans-serif;
-  font-size: 24px;
-  color: #000000;
-  margin-top: 20px;
-}
-
-.container {
-  max-width: 1680px;
-  margin: 0 auto;
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
   padding: 0;
+  margin: 0;
+}
+.tag-list li {
+  background-color: #F8F8F8;
+  padding: 6px 8px;
+  border-radius: 2px;
+  font-size: 13px;
+  color: #666;
 }
 
 .header {
@@ -95,243 +87,56 @@ body {
   color: #000000;
 }
 
-section {
-  padding: 4rem 0;
+.lnb {
+  width: 320px;
+  background-color: #ffffff;
+  position: sticky;
+  top: 60px;
+  height: calc(100vh - 60px - 80px);
+  padding: 60px 0 60px 120px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
-section h3 {
+.lnb::-webkit-scrollbar {
   display: none;
 }
-section > .container > p {
-  display: none;
+.lnb ul {
+  margin-bottom: 40px;
+}
+.lnb .menu-item {
+  position: relative;
+  font-weight: 500;
+}
+.lnb .menu-item > a {
+  font-size: 13px;
+  color: #b5b5b5;
+  margin-bottom: 12px;
+}
+.lnb .menu-item .submenu li {
+  margin-bottom: 4px;
+}
+.lnb .menu-item .submenu li a {
+  font-weight: 500;
+  font-size: 14px;
+  color: #000000;
+}
+.lnb .menu-item .submenu li a.active {
+  color: #EE2C3C;
+  font-weight: 600;
 }
 
-.understanding {
-  padding: 60px 0;
-}
-.understanding > .container > p {
-  text-align: center;
-  font-size: 1.2rem;
-  color: #666666;
-  max-width: 800px;
-  margin: 0 auto 4rem;
-}
-.understanding .sub-section {
-  margin-bottom: 5rem;
-}
-.understanding .sub-section h4 {
-  font-size: 2rem;
-  color: #000000;
-  position: relative;
-  padding-bottom: 0.5rem;
-  font-family: "DM Serif Display", serif;
-  font-weight: 500;
-}
-.understanding .sub-section p {
-  font-size: 1.1rem;
-  color: #000000;
-  margin-bottom: 2rem;
-  font-weight: 500;
-}
-.understanding .content-box {
-  background-color: #f5f5f5;
-  padding: 2rem;
-  border-radius: 8px;
-  border-left: 4px solid #000000;
-}
-.understanding .content-box h5 {
-  font-size: 1.3rem;
-  color: #000000;
-  margin-bottom: 1.5rem;
-  font-family: "DM Serif Display", serif;
-  font-weight: 400;
-}
-.understanding .content-box ul {
-  list-style: none;
-}
-.understanding .content-box ul li {
-  position: relative;
-  padding-left: 1.5rem;
-  margin-bottom: 1rem;
-}
-.understanding .content-box ul li:before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  color: #000000;
-  font-weight: bold;
-}
-
-.discover {
-  padding: 60px 0;
-}
-.discover > .container > p {
-  text-align: center;
-  font-size: 1.2rem;
-  color: #666666;
-  max-width: 800px;
-  margin: 0 auto 4rem;
-}
-.discover .sub-section {
-  margin-bottom: 5rem;
-}
-.discover .sub-section h4 {
-  font-size: 2rem;
-  color: #000000;
-  position: relative;
-  padding-bottom: 0.5rem;
-  font-family: "DM Serif Display", serif;
-  font-weight: 500;
-}
-.discover .sub-section p {
-  font-size: 1.1rem;
-  color: #000000;
-  margin-bottom: 2rem;
-  font-weight: 500;
-}
-.discover .content-box {
-  background-color: #f5f5f5;
-  padding: 2rem;
-  border-radius: 8px;
-  border-left: 4px solid #000000;
-}
-.discover .content-box h5 {
-  font-size: 1.3rem;
-  color: #000000;
-  margin-bottom: 1.5rem;
-  font-family: "DM Serif Display", serif;
-  font-weight: 400;
-}
-.discover .content-box ul {
-  list-style: none;
-}
-.discover .content-box ul li {
-  position: relative;
-  padding-left: 1.5rem;
-  margin-bottom: 1rem;
-}
-.discover .content-box ul li:before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  color: #000000;
-  font-weight: bold;
-}
-
-.define {
-  padding: 60px 0;
-}
-.define > .container > p {
-  text-align: center;
-  font-size: 1.2rem;
-  color: #666666;
-  max-width: 800px;
-  margin: 0 auto 4rem;
-}
-.define .sub-section {
-  margin-bottom: 5rem;
-}
-.define .sub-section h4 {
-  font-size: 2rem;
-  color: #000000;
-  position: relative;
-  padding-bottom: 0.5rem;
-  font-family: "DM Serif Display", serif;
-  font-weight: 500;
-}
-.define .sub-section p {
-  font-size: 1.1rem;
-  color: #000000;
-  margin-bottom: 2rem;
-  font-weight: 500;
-}
-.define .content-box {
-  background-color: #f5f5f5;
-  padding: 2rem;
-  border-radius: 8px;
-  border-left: 4px solid #000000;
-}
-.define .content-box h5 {
-  font-size: 1.3rem;
-  color: #000000;
-  margin-bottom: 1.5rem;
-  font-family: "DM Serif Display", serif;
-  font-weight: 400;
-}
-.define .content-box ul {
-  list-style: none;
-}
-.define .content-box ul li {
-  position: relative;
-  padding-left: 1.5rem;
-  margin-bottom: 1rem;
-}
-.define .content-box ul li:before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  color: #000000;
-  font-weight: bold;
-}
-
-.develop {
-  padding: 60px 0;
-}
-.develop > .container > p {
-  text-align: center;
-  font-size: 1.2rem;
-  color: #666666;
-  max-width: 800px;
-  margin: 0 auto 4rem;
-}
-.develop .sub-section {
-  margin-bottom: 5rem;
-}
-.develop .sub-section h4 {
-  font-size: 2rem;
-  color: #000000;
-  position: relative;
-  padding-bottom: 0.5rem;
-  font-family: "DM Serif Display", serif;
-  font-weight: 500;
-}
-.develop .sub-section p {
-  font-size: 1.1rem;
-  color: #000000;
-  margin-bottom: 2rem;
-  font-weight: 500;
-}
-.develop .content-box {
-  background-color: #f5f5f5;
-  padding: 2rem;
-  border-radius: 8px;
-  border-left: 4px solid #000000;
-}
-.develop .content-box h5 {
-  font-size: 1.3rem;
-  color: #000000;
-  margin-bottom: 1.5rem;
-  font-family: "DM Serif Display", serif;
-  font-weight: 400;
-}
-.develop .content-box ul {
-  list-style: none;
-}
-.develop .content-box ul li {
-  position: relative;
-  padding-left: 1.5rem;
-  margin-bottom: 1rem;
-}
-.develop .content-box ul li:before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  color: #000000;
-  font-weight: bold;
-}
-
+.understanding,
+.discover,
+.define,
+.develop,
 .deliver {
   padding: 60px 0;
 }
+.understanding > .container > p,
+.discover > .container > p,
+.define > .container > p,
+.develop > .container > p,
 .deliver > .container > p {
   text-align: center;
   font-size: 1.2rem;
@@ -339,9 +144,17 @@ section > .container > p {
   max-width: 800px;
   margin: 0 auto 4rem;
 }
+.understanding .sub-section,
+.discover .sub-section,
+.define .sub-section,
+.develop .sub-section,
 .deliver .sub-section {
   margin-bottom: 5rem;
 }
+.understanding .sub-section h4,
+.discover .sub-section h4,
+.define .sub-section h4,
+.develop .sub-section h4,
 .deliver .sub-section h4 {
   font-size: 2rem;
   color: #000000;
@@ -350,18 +163,20 @@ section > .container > p {
   font-family: "DM Serif Display", serif;
   font-weight: 500;
 }
+.understanding .sub-section p,
+.discover .sub-section p,
+.define .sub-section p,
+.develop .sub-section p,
 .deliver .sub-section p {
   font-size: 1.1rem;
   color: #000000;
   margin-bottom: 2rem;
   font-weight: 500;
 }
-.deliver .content-box {
-  background-color: #f5f5f5;
-  padding: 2rem;
-  border-radius: 8px;
-  border-left: 4px solid #000000;
-}
+.understanding .content-box h5,
+.discover .content-box h5,
+.define .content-box h5,
+.develop .content-box h5,
 .deliver .content-box h5 {
   font-size: 1.3rem;
   color: #000000;
@@ -369,27 +184,22 @@ section > .container > p {
   font-family: "DM Serif Display", serif;
   font-weight: 400;
 }
-.deliver .content-box ul {
-  list-style: none;
-}
+.understanding .content-box ul li,
+.discover .content-box ul li,
+.define .content-box ul li,
+.develop .content-box ul li,
 .deliver .content-box ul li {
-  position: relative;
-  padding-left: 1.5rem;
   margin-bottom: 1rem;
 }
-.deliver .content-box ul li:before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  color: #000000;
-  font-weight: bold;
-}
 
-.footer {
-  background-color: #000000;
-  color: #ffffff;
-  padding: 2rem 0;
-  text-align: center;
+section {
+  padding: 4rem 0;
+}
+section h3 {
+  display: none;
+}
+section > .container > p {
+  display: none;
 }
 
 @media (max-width: 768px) {
@@ -431,81 +241,6 @@ section > .container > p {
   .sub-section {
     margin-bottom: 3rem;
   }
-}
-.content-wrapper {
-  display: flex;
-  position: relative;
-}
-
-.lnb {
-  width: 320px;
-  background-color: #ffffff;
-  position: sticky;
-  top: 60px;
-  height: calc(100vh - 60px - 80px);
-  padding: 60px 0 60px 120px;
-  overflow-y: auto;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-.lnb::-webkit-scrollbar {
-  display: none;
-}
-.lnb ul {
-  margin-bottom: 40px;
-}
-.lnb .menu-item {
-  position: relative;
-  font-weight: 500;
-}
-.lnb .menu-item > a {
-  font-size: 13px;
-  color: #b5b5b5;
-  margin-bottom: 12px;
-}
-.lnb .menu-item .submenu li {
-  margin-bottom: 4px;
-}
-.lnb .menu-item .submenu li a {
-  font-weight: 500;
-  font-size: 14px;
-  color: #000000;
-}
-.lnb .menu-item .submenu li a.active {
-  color: #EE2C3C;
-  font-weight: 600;
-}
-
-.main-content {
-  flex: 1;
-  margin-left: 20px;
-  padding-right: 20px;
-}
-
-.content-box {
-  background-color: #f5f5f5;
-  padding: 2rem;
-  border-radius: 8px;
-  border-left: 4px solid #000000;
-}
-.content-box h5 {
-  font-size: 1.3rem;
-  color: #000000;
-  margin-bottom: 1.5rem;
-  font-family: "DM Serif Display", serif;
-  font-weight: 400;
-}
-.content-box ul li {
-  position: relative;
-  padding-left: 1.5rem;
-  margin-bottom: 1rem;
-}
-.content-box ul li:before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  color: #000000;
-  font-weight: bold;
 }
 
 /*# sourceMappingURL=main.css.map */
