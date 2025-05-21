@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "이모션글로벌 컨설팅 연구방법론",
   "scripts": {
-    "sass": "sass --watch styles/main.scss styles/main.css",
+    "sass": "sass styles/main.scss styles/main.css --watch",
     "start": "live-server"
   },
   "devDependencies": {

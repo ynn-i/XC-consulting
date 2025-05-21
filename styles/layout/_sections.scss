@@ -1,0 +1,33 @@
+// Common Section Styles
+%section-common {
+  @include section-base;
+  
+  .sub-section {
+    @include sub-section-base;
+  }
+  
+  .content-box {
+    @include content-box-base;
+  }
+}
+
+// Apply common styles to all sections
+.understanding,
+.discover,
+.define,
+.develop,
+.deliver {
+  @extend %section-common;
+}
+
+section {
+  padding: 4rem 0;
+
+  h3 {
+    display: none;
+  }
+
+  > .container > p {
+    display: none;
+  }
+} 

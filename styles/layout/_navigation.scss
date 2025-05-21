@@ -1,0 +1,46 @@
+.lnb {
+  width: $lnb-width;
+  background-color: $white;
+  position: sticky;
+  top: calc(60px);
+  height: calc(100vh - 60px - 80px);
+  padding: 60px 0 60px 120px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  ul {
+    margin-bottom: 40px;
+  }
+  
+  .menu-item {
+    position: relative;
+    font-weight: 500;
+
+    > a {
+      font-size: 13px;
+      color: #b5b5b5;
+      margin-bottom: 12px;
+    }
+    
+    .submenu {      
+      li {
+        margin-bottom: 4px;
+        a {
+          font-weight: 500;
+          font-size: 14px;
+          color: #000000;
+          
+          &.active {
+              color: #EE2C3C;
+              font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+} 

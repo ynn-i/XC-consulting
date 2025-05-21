@@ -1,0 +1,49 @@
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+  }
+  
+  .lnb {
+    width: 100%;
+    position: relative;
+    top: 0;
+    height: auto;
+    max-height: none;
+    margin: 20px;
+    overflow-y: visible;
+    border-bottom: 1px solid $medium-gray;
+  }
+  
+  .main-content {
+    margin-left: 0;
+    padding: 20px;
+  }
+  
+  .main-title {
+    padding: 60px 20px;
+    
+    h2 {
+      font-size: 48px;
+    }
+    
+    p {
+      font-size: 18px;
+    }
+  }
+  
+  .header {
+    padding: 0 20px;
+  }
+  
+  section {
+    padding: 3rem 0;
+  }
+  
+  .sub-section {
+    margin-bottom: 3rem;
+  }
+} 
