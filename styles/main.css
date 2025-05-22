@@ -29,6 +29,13 @@ body {
   color: #4a4a4a;
 }
 
+button {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
 .tag-list {
   display: flex;
   flex-wrap: wrap;
@@ -188,7 +195,6 @@ body {
 .deliver .sub-section p {
   font-size: 1.1rem;
   color: #000000;
-  margin-bottom: 2rem;
   font-weight: 500;
 }
 .understanding .content-box h5,
@@ -198,16 +204,8 @@ body {
 .deliver .content-box h5 {
   font-size: 1.3rem;
   color: #000000;
-  margin-bottom: 1.5rem;
   font-family: "DM Serif Display", serif;
   font-weight: 400;
-}
-.understanding .content-box ul li,
-.discover .content-box ul li,
-.define .content-box ul li,
-.develop .content-box ul li,
-.deliver .content-box ul li {
-  margin-bottom: 10px;
 }
 .understanding .content-box .description,
 .discover .content-box .description,
@@ -260,6 +258,79 @@ section > .container > p {
   text-align: center;
 }
 
+.guide {
+  margin-top: 30px;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+  color: #000;
+}
+.guide .guide-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.guide .guide-toggle span {
+  font-size: 14px;
+  color: #000000;
+  font-weight: 600;
+}
+.guide .guide-toggle .arrow-icon {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+}
+.guide .guide-toggle.active .arrow-icon {
+  transform: rotate(180deg);
+}
+.guide .guide-content {
+  display: none;
+  margin-top: 20px;
+}
+.guide .guide-content.active {
+  display: block;
+}
+.guide:first-of-type .guide-content {
+  display: block;
+}
+.guide:first-of-type .guide-toggle .arrow-icon {
+  transform: rotate(180deg);
+}
+.guide .guide-list .info-A .guide-item, .guide .guide-list .info-B .guide-item {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 0 0;
+  background: #F8F8F8;
+}
+.guide .guide-list .info-A .guide-item h5, .guide .guide-list .info-B .guide-item h5 {
+  font-family: "Pretendard", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.guide .guide-list .info-A .guide-item span, .guide .guide-list .info-B .guide-item span {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -0.5px;
+}
+.guide .guide-list .info-A .guide-item p, .guide .guide-list .info-B .guide-item p {
+  font-family: "Pretendard", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.4;
+  padding-top: 8px;
+}
+.guide .guide-list .info-B {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -275,7 +346,7 @@ section > .container > p {
     max-height: none;
     margin: 20px;
     overflow-y: visible;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid #ddd;
   }
   .main-content {
     margin-left: 0;

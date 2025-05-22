@@ -1,0 +1,101 @@
+// Guide Section
+.guide {
+  margin-top: 30px;
+  border-top: 1px solid $medium-gray;
+  padding-top: 20px;
+  color: #000;
+
+  .guide-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    // &:hover {
+    //   background-color: $light-gray;
+    // }
+
+    span {
+      font-size: 14px;
+      color: $primary-color;
+      font-weight: 600;
+    }
+
+    .arrow-icon {
+      width: 20px;
+      height: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    &.active {
+      .arrow-icon {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .guide-content {
+    display: none;
+    margin-top: 20px;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  // 첫 번째 가이드만 기본적으로 표시
+  &:first-of-type {
+    .guide-content {
+      display: block;
+    }
+    
+    .guide-toggle {
+      .arrow-icon {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .guide-list {
+    .info-A, .info-B {
+      .guide-item {
+        display: flex;
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        flex: 1 0 0;
+        background: #F8F8F8;
+
+        h5 {
+          font-family: 'Pretendard', sans-serif;
+          font-size: 13px;
+          font-weight: 600;
+          margin-bottom: 16px;
+        }
+
+        span {
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 1.4;
+          letter-spacing: -0.5px;
+        }
+
+        p {
+          font-family: 'Pretendard', sans-serif;
+          font-size: 14px;
+          font-weight: 300;
+          line-height: 1.4;
+          padding-top: 8px;
+        }
+      }
+    }
+
+    .info-B {
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
+    }
+  }
+}
