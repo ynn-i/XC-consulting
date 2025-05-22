@@ -44,6 +44,24 @@ body {
   color: #666;
 }
 
+.main-title {
+  padding: 120px 120px;
+}
+.main-title h2 {
+  font-family: "DM Serif Display", serif;
+  font-size: 72px;
+  color: #000000;
+  font-weight: 500;
+  line-height: 1.2;
+  display: block;
+}
+.main-title p {
+  font-family: "Pretendard", sans-serif;
+  font-size: 24px;
+  color: #000000;
+  margin-top: 20px;
+}
+
 .header {
   background-color: #ffffff;
   border-bottom: #ddd 1px solid;
@@ -189,7 +207,18 @@ body {
 .define .content-box ul li,
 .develop .content-box ul li,
 .deliver .content-box ul li {
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
+}
+.understanding .content-box .description,
+.discover .content-box .description,
+.define .content-box .description,
+.develop .content-box .description,
+.deliver .content-box .description {
+  font-family: Pretendard;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 150%;
+  letter-spacing: -0.5px;
 }
 
 section {
@@ -224,22 +253,11 @@ section > .container > p {
   text-align: center;
 }
 
-.main-title {
-  padding: 120px 120px;
-}
-.main-title h2 {
-  font-family: "DM Serif Display", serif;
-  font-size: 72px;
-  color: #000000;
-  font-weight: 500;
-  line-height: 1.2;
-  display: block;
-}
-.main-title p {
-  font-family: "Pretendard", sans-serif;
-  font-size: 24px;
-  color: #000000;
-  margin-top: 20px;
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 2rem 0;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -282,24 +300,6 @@ section > .container > p {
     margin-bottom: 3rem;
   }
 }
-.main-title {
-  padding: 120px 120px;
-}
-.main-title h2 {
-  font-family: "DM Serif Display", serif;
-  font-size: 72px;
-  color: #000000;
-  font-weight: 500;
-  line-height: 1.2;
-  display: block;
-}
-.main-title p {
-  font-family: "Pretendard", sans-serif;
-  font-size: 24px;
-  color: #000000;
-  margin-top: 20px;
-}
-
 .content-wrapper {
   display: flex;
   position: relative;
