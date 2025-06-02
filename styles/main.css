@@ -442,53 +442,5 @@ section > .container > p {
     margin-bottom: 3rem;
   }
 }
-.content-wrapper {
-  display: flex;
-  position: relative;
-  max-width: 1680px;
-  margin: 0 auto;
-  padding-right: 120px;
-}
-
-.main-content {
-  flex: 1;
-  margin-left: 20px;
-  padding: 0 20px;
-  min-width: 0;
-}
-
-.footer {
-  background-color: #000000;
-  color: #ffffff;
-  padding: 2rem 0;
-  text-align: center;
-}
-
-.guide-toggle {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  padding: 1rem;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-.guide-toggle .arrow-icon {
-  display: inline-block;
-  margin-left: 0.5rem;
-}
-.guide-toggle span {
-  font-size: 1rem;
-  color: #4a4a4a;
-}
-
-.guide-content {
-  background-color: #ffffff;
-  border: 1px solid #e0e0e0;
-  border-radius: 4px;
-  margin-top: 0.5rem;
-  padding: 1rem;
-}
 
 /*# sourceMappingURL=main.css.map */
