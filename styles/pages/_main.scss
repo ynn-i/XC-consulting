@@ -1,10 +1,14 @@
-// Guide Section
+// ====================================
+// GUIDE SECTION
+// ====================================
+
 .guide {
   margin-top: 30px;
   border-top: 1px solid $medium-gray;
   padding-top: 20px;
   color: #000;
 
+  // Guide Toggle Button
   .guide-toggle {
     display: flex;
     align-items: center;
@@ -12,7 +16,9 @@
     width: 100%;
     cursor: pointer;
     transition: all 0.3s ease;
-    padding: 10px 0;
+    // padding: 10px 0;
+    background: none;
+    border: none;
 
     span {
       font-size: 14px;
@@ -20,12 +26,16 @@
       font-weight: 600;
     }
 
+    // Arrow Icon Animation
     .arrow-icon {
       width: 20px;
       height: 20px;
       transition: transform 0.3s ease;
+      display: inline-block;
+      margin-left: 0.5rem;
     }
 
+    // Active State
     &.active {
       .arrow-icon {
         transform: rotate(180deg);
@@ -33,24 +43,37 @@
     }
   }
 
+  // Guide Content Container
   .guide-content {
     display: none;
     margin-top: 20px;
+    background-color: $white;
+    // border: 1px solid $border-color;
+    border-radius: 4px;
+    // padding: 1rem;
 
     &.active {
       display: block;
     }
   }
 
+  // Guide List Items
   .guide-list {
     li {
       margin-bottom: 20px;
 
       &:last-child {
         margin-bottom: 0;
+        display: flex;
+        gap: 20px;
+
+        .guide-item {
+          flex: 1;
+        }
       }
     }
 
+    // Individual Guide Item Card
     .guide-item {
       display: flex;
       padding: 20px;
@@ -84,19 +107,13 @@
         color: #666;
       }
     }
-
-    li:last-child {
-      display: flex;
-      gap: 20px;
-
-      .guide-item {
-        flex: 1;
-      }
-    }
   }
 }
 
-// Sub Section
+// ====================================
+// SUB SECTION
+// ====================================
+
 .sub-section {
   margin-bottom: 40px;
 
@@ -116,9 +133,7 @@
   .content-box {
     background: #fff;
     border-radius: 12px;
-    padding: 30px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-
+    
     .description {
       font-size: 15px;
       line-height: 1.6;
@@ -128,7 +143,10 @@
   }
 }
 
-// Tag List
+// ====================================
+// TAG LIST
+// ====================================
+
 .tag-list {
   display: flex;
   flex-wrap: wrap;
@@ -143,4 +161,36 @@
     color: #666;
     font-weight: 500;
   }
+}
+
+// ====================================
+// LAYOUT COMPONENTS
+// ====================================
+
+// Content Wrapper
+.content-wrapper {
+  display: flex;
+  position: relative;
+  max-width: $max-width;
+  margin: 0 auto;
+  padding-right: 120px;
+}
+
+// Main Content Area
+.main-content {
+  flex: 1;
+  margin-left: 20px;
+  padding: 0 20px;
+  min-width: 0; // Prevent flex item from overflowing
+}
+
+// ====================================
+// FOOTER
+// ====================================
+
+.footer {
+  background-color: $primary-color;
+  color: $white;
+  padding: 2rem 0;
+  text-align: center;
 }
