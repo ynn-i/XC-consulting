@@ -120,6 +120,7 @@ button {
 .lnb {
   width: 320px;
   background-color: #ffffff;
+  border-right: 1px solid #e0e0e0;
   position: sticky;
   top: 60px;
   height: calc(100vh - 60px);
@@ -130,17 +131,6 @@ button {
 }
 .lnb::-webkit-scrollbar {
   display: none;
-}
-.lnb::after {
-  content: "";
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 320px;
-  height: 140px;
-  background: linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
-  pointer-events: none;
-  z-index: 1;
 }
 .lnb ul {
   margin-bottom: 40px;
@@ -172,7 +162,7 @@ button {
 .define,
 .develop,
 .deliver {
-  padding: 60px 0;
+  padding: 0;
 }
 .understanding > .container > p,
 .discover > .container > p,
@@ -184,13 +174,6 @@ button {
   color: #666666;
   max-width: 800px;
   margin: 0 auto 4rem;
-}
-.understanding .sub-section,
-.discover .sub-section,
-.define .sub-section,
-.develop .sub-section,
-.deliver .sub-section {
-  margin-bottom: 5rem;
 }
 .understanding .sub-section h4,
 .discover .sub-section h4,
@@ -359,6 +342,7 @@ section > .container > p {
 .flex-container {
   display: flex;
   gap: 60px;
+  padding-top: 60px;
 }
 .flex-container img {
   width: 400px;
@@ -367,6 +351,7 @@ section > .container > p {
 
 .sub-section {
   margin-bottom: 40px;
+  flex: 1;
 }
 .sub-section h4 {
   font-size: 24px;

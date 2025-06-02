@@ -11,7 +11,7 @@
 }
 
 @mixin section-base {
-  padding: 60px 0;
+  padding: 0;
   
   > .container > p {
     text-align: center;
@@ -23,8 +23,6 @@
 }
 
 @mixin sub-section-base {
-  margin-bottom: 5rem;
-  
   h4 {
     font-size: 2rem;
     color: $primary-color;
