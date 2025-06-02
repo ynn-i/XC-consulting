@@ -251,80 +251,102 @@ section > .container > p {
   text-align: center;
 }
 
-.footer {
-  background-color: #000000;
-  color: #ffffff;
-  padding: 2rem 0;
-  text-align: center;
-}
-
 .guide {
   margin-top: 30px;
   border-top: 1px solid #ddd;
   padding-top: 20px;
   color: #000;
 }
+
 .guide .guide-toggle {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  padding: 12px 16px;
+  background-color: #f8f8f8;
+  border-radius: 4px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
 .guide .guide-toggle span {
   font-size: 14px;
   color: #000000;
   font-weight: 600;
 }
+
 .guide .guide-toggle .arrow-icon {
   width: 20px;
   height: 20px;
   transition: transform 0.3s ease;
 }
+
 .guide .guide-toggle.active .arrow-icon {
   transform: rotate(180deg);
 }
+
 .guide .guide-content {
   display: none;
   margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 4px;
 }
+
 .guide .guide-content.active {
   display: block;
 }
-.guide:first-of-type .guide-content {
-  display: block;
-}
-.guide:first-of-type .guide-toggle .arrow-icon {
-  transform: rotate(180deg);
-}
-.guide .guide-list .info-A .guide-item, .guide .guide-list .info-B .guide-item {
+
+.guide .guide-list {
   display: flex;
-  padding: 20px;
   flex-direction: column;
-  align-items: flex-start;
-  flex: 1 0 0;
-  background: #F8F8F8;
+  gap: 20px;
 }
-.guide .guide-list .info-A .guide-item h5, .guide .guide-list .info-B .guide-item h5 {
+
+.guide .guide-list .info-A,
+.guide .guide-list .info-B {
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 4px;
+}
+
+.guide .guide-list .info-A .guide-item,
+.guide .guide-list .info-B .guide-item {
+  margin-bottom: 16px;
+}
+
+.guide .guide-list .info-A .guide-item:last-child,
+.guide .guide-list .info-B .guide-item:last-child {
+  margin-bottom: 0;
+}
+
+.guide .guide-list .info-A .guide-item h5,
+.guide .guide-list .info-B .guide-item h5 {
   font-family: "Pretendard", sans-serif;
   font-size: 13px;
   font-weight: 600;
   margin-bottom: 16px;
 }
-.guide .guide-list .info-A .guide-item span, .guide .guide-list .info-B .guide-item span {
+
+.guide .guide-list .info-A .guide-item span,
+.guide .guide-list .info-B .guide-item span {
   font-size: 14px;
   font-weight: 600;
   line-height: 1.4;
   letter-spacing: -0.5px;
 }
-.guide .guide-list .info-A .guide-item p, .guide .guide-list .info-B .guide-item p {
+
+.guide .guide-list .info-A .guide-item p,
+.guide .guide-list .info-B .guide-item p {
   font-family: "Pretendard", sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 1.4;
   padding-top: 8px;
 }
+
 .guide .guide-list .info-B {
   display: flex;
   gap: 20px;
