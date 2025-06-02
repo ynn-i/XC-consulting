@@ -2,6 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  word-break: keep-all;      // 한국어 단어를 유지하면서 줄바꿈
+  overflow-wrap: break-word; // 긴 단어는 강제 줄바꿈
+  line-break: strict;        // 한국어 줄바꿈 규칙 적용
+  hyphens: auto;
+  white-space: normal;
 }
 
 ul, ol {

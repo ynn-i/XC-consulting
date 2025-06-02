@@ -313,11 +313,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 const newState = this.classList.contains('active');
                 
-                // 텍스트 변경
-                if (buttonText) {
-                    const newText = newState ? '상세 가이드 접기' : '상세 가이드 확인하기';
-                    buttonText.textContent = newText;
-                }
+                // // 텍스트 변경
+                // if (buttonText) {
+                //     const newText = newState ? '상세 가이드 접기' : '상세 가이드 확인하기';
+                //     buttonText.textContent = newText;
+                // }
                 
                 // 화살표 회전
                 if (arrowIcon) {
@@ -417,4 +417,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // console.log('debugTools.checkSections() - 섹션 정보 확인');
     
     // console.log('DOM Content Loaded - 초기화 완료');
+
+
+    
 });

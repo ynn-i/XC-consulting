@@ -114,6 +114,16 @@
 // SUB SECTION
 // ====================================
 
+.flex-container{
+  display: flex;
+  gap: 60px;
+   
+  img {
+    width: 400px;
+    height: fit-content;
+  }
+}
+
 .sub-section {
   margin-bottom: 40px;
 
