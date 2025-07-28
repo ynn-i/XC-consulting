@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XC コンサルティング研究方法論</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_php@1.0/noonnoon.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- i18next CDN -->
+    <script src="https://unpkg.com/i18next@23.4.6/dist/umd/i18next.min.js"></script>
+    <script src="https://unpkg.com/i18next-http-backend@2.2.0/i18nextHttpBackend.min.js"></script>
+</head>
+<body>
+    <div class="main-title">
+        <h2 data-i18n="main_title">Puzzle piece <br> research methodology</h2>
+        <p data-i18n="main_subtitle">イモーション・グローバル・コンサルティング研究方法論</p>
+    </div>
+    <header class="header">
+        <nav class="nav">
+            <div class="container">
+                <h1 class="logo">
+                    <a href="/">
+                        <img src="images/LOGO.svg" alt="XC コンサルティング ロゴ">
+                    </a>
+                </h1>
+                <ul class="nav-links">
+                    <li><a href="index.html">Puzzle Piece</a></li>
+                    <li><a href="puzzle-board.html">Puzzle Board</a></li>
+                    <li><a href="ja.html" lang="ja">日本語</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- ... 기존 코드 ... -->
+    <script>
+    i18next
+      .use(i18nextHttpBackend)
+      .init({
+        lng: 'ja',
+        fallbackLng: 'ja',
+        debug: false,
+        backend: {
+          loadPath: '/locales/{{lng}}/translation.json'
+        },
+        interpolation: {
+          escapeValue: false
+        }
+      }, function(err, t) {
+        updateContent();
+      });
+    function updateContent() {
+      document.querySelectorAll('[data-i18n]').forEach(function(elem) {
+        elem.innerHTML = i18next.t(elem.getAttribute('data-i18n'));
+      });
+    }
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html> 
