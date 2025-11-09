@@ -1,1491 +1,1835 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>XC 컨설팅 연구방법론</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_php@1.0/noonnoon.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
-    <link rel="stylesheet" href="styles/main.css">
-</head>
-<body>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_php@1.0/noonnoon.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
     <div class="main-title">
-        <h2>Puzzle piece <br> research methodology</h2>
-        <p>이모션글로벌 컨설팅 연구방법론</p>
+      <h2>
+        Puzzle piece <br />
+        research methodology
+      </h2>
+      <p>이모션글로벌 컨설팅 연구방법론</p>
     </div>
 
     <header class="header">
-        <nav class="nav">
-            <div class="container">
-                <h1 class="logo">
-                    <a href="/">
-                        <img src="images/LOGO.svg" alt="XC 컨설팅 로고">
-                    </a>
-                </h1>
-                <ul class="nav-links">
-                    <li><a href="index.html">Puzzle Piece</a></li>
-                    <li><a href="puzzle-board.html">Puzzle Board</a></li>
-                </ul>
-            </div>
-        </nav>
+      <nav class="nav">
+        <div class="container">
+          <h1 class="logo">
+            <a href="/">
+              <img src="images/LOGO.svg" alt="XC 컨설팅 로고" />
+            </a>
+          </h1>
+          <ul class="nav-links">
+            <li><a href="index.html">Puzzle Piece</a></li>
+            <li><a href="puzzle-board.html">Puzzle Board</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <div class="content-wrapper">
-        <nav class="lnb">
-            <ul>
-                <li class="menu-item">
-                    <a href="#understanding">understanding</a>
-                    <ul class="submenu">
-                        <li><a href="#co-creation">Co-creation Workshop</a></li>
-                        <li><a href="#desk-research">Desk Research</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item">
-                    <a href="#discover">discover</a>
-                    <ul class="submenu">
-                        <li><a href="#focus-group">Focus Group Interview</a></li>
-                        <li><a href="#in-depth">In-depth Interview</a></li>
-                        <li><a href="#contextual">Contextual Inquiry</a></li>
-                        <li><a href="#service-safari">Service Safari</a></li>
-                        <li><a href="#expert">Expert Interview</a></li>
-                        <li><a href="#usability">Usability Test</a></li>
-                        <li><a href="#persona">Persona</a></li>
-                        <li><a href="#journey">Journey map</a></li>
-                        <li><a href="#log">Log Analytics</a></li>
-                        <li><a href="#voc">Voice of Customer</a></li>
-                        <li><a href="#eyetracking">Eyetracking</a></li>
-                        <li><a href="#survey">Survey</a></li>
-                        <li><a href="#voting">Voting</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item">
-                    <a href="#define">define</a>
-                    <ul class="submenu">
-                        <li><a href="#affinity">Affinity Diagram</a></li>
-                        <li><a href="#card-sorting">Card Sorting</a></li>
-                        <li><a href="#mind-mapping">Mind Mapping</a></li>
-                        <li><a href="#heuristics">Heuristics</a></li>
-                        <li><a href="#positioning">Positioning Map</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item">
-                    <a href="#develop">develop</a>
-                    <ul class="submenu">
-                        <li><a href="#mental-model">Mental Model</a></li>
-                        <li><a href="#expert-solutions">Expert Solutions</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item">
-                    <a href="#deliver">Deliver & Validation</a>
-                    <ul class="submenu">
-                        <li><a href="#service-prototyping">Service Prototyping</a></li>
-                        <li><a href="#ux-flow">UX Flow</a></li>
-                        <li><a href="#flow-chart">Flow Chart</a></li>
-                        <li><a href="#ab-testing">A/B Testing</a></li>
-                    </ul>
-                </li>
+      <nav class="lnb">
+        <ul>
+          <li class="menu-item">
+            <a href="#understanding">understanding</a>
+            <ul class="submenu">
+              <li><a href="#co-creation">Co-creation Workshop</a></li>
+              <li><a href="#desk-research">Desk Research</a></li>
             </ul>
-        </nav>
+          </li>
+          <li class="menu-item">
+            <a href="#discover">discover</a>
+            <ul class="submenu">
+              <li><a href="#focus-group">Focus Group Interview</a></li>
+              <li><a href="#in-depth">In-depth Interview</a></li>
+              <li><a href="#contextual">Contextual Inquiry</a></li>
+              <li><a href="#service-safari">Service Safari</a></li>
+              <li><a href="#expert">Expert Interview</a></li>
+              <li><a href="#usability">Usability Test</a></li>
+              <li><a href="#persona">Persona</a></li>
+              <li><a href="#journey">Journey map</a></li>
+              <li><a href="#log">Log Analytics</a></li>
+              <li><a href="#voc">Voice of Customer</a></li>
+              <li><a href="#eyetracking">Eyetracking</a></li>
+              <li><a href="#survey">Survey</a></li>
+              <li><a href="#voting">Voting</a></li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="#define">define</a>
+            <ul class="submenu">
+              <li><a href="#affinity">Affinity Diagram</a></li>
+              <li><a href="#card-sorting">Card Sorting</a></li>
+              <li><a href="#mind-mapping">Mind Mapping</a></li>
+              <li><a href="#heuristics">Heuristics</a></li>
+              <li><a href="#positioning">Positioning Map</a></li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="#develop">develop</a>
+            <ul class="submenu">
+              <li><a href="#mental-model">Mental Model</a></li>
+              <li><a href="#expert-solutions">Expert Solutions</a></li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="#deliver">Deliver & Validation</a>
+            <ul class="submenu">
+              <li><a href="#service-prototyping">Service Prototyping</a></li>
+              <li><a href="#ux-flow">UX Flow</a></li>
+              <li><a href="#flow-chart">Flow Chart</a></li>
+              <li><a href="#ab-testing">A/B Testing</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
 
-        <main class="main-content">
-            <section id="understanding" class="understanding">
-                <div class="container">
-                    <h3>Understanding</h3>
-                    <p>고객의 니즈와 문제점을 정확히 파악하는 단계입니다.</p>
-                    
-                    <div class="flex-container">
-                        <div class="sub-section" id="co-creation">
-                            <h4>Co-creation Workshop</h4>
-                            <p>코크리에이션 워크샵</p>
-                            <div class="content-box">
-                                <ul class="tag-list">
-                                    <li>공동</li>
-                                    <li>의논</li>
-                                    <li>공동창작</li>
-                                    <li>협업</li>
-                                    <li>그룹활동</li>
-                                    <li>이해관계자</li>
-                                </ul>
-                                <p class="description">프로젝트의 모든 과정에서 다양한 방식을 적용하여 문제 해결을 위해 모든 이해관계자가 참여하여 공동으로 작업하는 순환적이고 협동적인 연구 방법</p>
-                                <div class="guide">
-                                    <button class="guide-toggle">
-                                        <span>상세 가이드 확인하기</span>
-                                        <img src="images/arrDown.svg" alt="펼치기" class="arrow-icon">
-                                    </button>
-                                    <div class="guide-content">
-                                        <ul class="guide-list">
-                                            <li class="info-A">
-                                                <div class="guide-item">
-                                                    <h5>SCENARIO 01</h5>
-                                                    <span>이해</span>
-                                                    <p>협업과 커뮤니케이션 강화 목적과 서로의 아이디어를 나누고 피드백을 주고받으며 함께 문제를 해결하면서 협업과 커뮤니케이션 능력을 향상시키기 위한 목적</p>
-                                                </div>
-                                            </li>
-                                            <li class="info-B">
-                                                <div class="guide-item">
-                                                    <h5>TIME FRAME</h5>
-                                                    <span>6일</span>
-                                                    <p>준비 1~3일 (그룹 크기, 자료의 양에 따라 상이)
-                                                    <br/>활동 2~8시간 (그룹 크기, 자료의 양 및 시스템 복잡성에 따라 상이)
-                                                    <br/>인사이트 정리 2일 (복잡성에 따라 상이)</p>
-                                                </div>
-                                                <div class="guide-item">
-                                                    <h5>REQUIRED POSITION</h5>
-                                                    <span>7+n 명</span>
-                                                    <p>촉진자(퍼실리테이터) 최소 1명
-                                                        <br/>프로젝트 리더
-                                                        <br/>스크립터 최소 1명
-                                                        <br/>관련 이해관계자 등 다양한 분야 참여자 5~20명</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="images/img-001.png" alt="Co-creation Workshop">
-                    </div>
-                    
-                    <div class="flex-container">
-                        <div class="sub-section" id="desk-research">
-                            <h4>Desk Research</h4>
-                            <p>데스크 리서치</p>
-                            <div class="content-box">
-                                <ul class="tag-list">
-                                    <li>데스크</li>
-                                    <li>리서치</li>
-                                    <li>시장조사</li>
-                                    <li>분석</li>
-                                    <li>벤치마킹</li>
-                                    <li>트렌드</li>
-                                </ul>
-                                <p class="description">기존의 문서, 보고서, 통계 자료 등을 수집하고 분석하여 시장 동향, 경쟁사 현황, 사용자 행동 등을 파악하는 연구 방법</p>
-                                <div class="guide">
-                                    <button class="guide-toggle">
-                                        <span>상세 가이드 확인하기</span>
-                                        <img src="images/arrDown.svg" alt="펼치기" class="arrow-icon">
-                                    </button>
-                                    <div class="guide-content">
-                                        <ul class="guide-list">
-                                            <li class="info-A">
-                                                <div class="guide-item">
-                                                    <h5>SCENARIO 01</h5>
-                                                    <span>이해</span>
-                                                    <p>기존의 문서, 보고서, 통계 자료 등을 수집하고 분석하여 시장 동향, 경쟁사 현황, 사용자 행동 등을 파악하는 연구 방법</p>
-                                                </div>
-                                            </li>
-                                            <li class="info-B">
-                                                <div class="guide-item">
-                                                    <h5>TIME FRAME</h5>
-                                                    <span>3일</span>
-                                                    <p>준비 1일 (자료 수집 및 정리)
-                                                    <br/>분석 1일 (자료 분석 및 패턴 파악)
-                                                    <br/>정리 1일 (인사이트 도출 및 보고서 작성)</p>
-                                                </div>
-                                                <div class="guide-item">
-                                                    <h5>REQUIRED POSITION</h5>
-                                                    <span>2명</span>
-                                                    <p>리서치 담당자 1명
-                                                        <br/>분석가 1명</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="images/img-002.png" alt="Desk Research">
-                    </div>
-                </div>
-            </section>
+      <main class="main-content">
+        <section id="understanding" class="understanding">
+          <div class="container">
+            <h3>Understanding</h3>
+            <p>고객의 니즈와 문제점을 정확히 파악하는 단계입니다.</p>
 
-            <section id="discover" class="discover">
-                <div class="container">
-                    <h3>Discover</h3>
-                    <p>사용자의 니즈와 행동을 깊이 있게 이해하고 인사이트를 도출하는 단계입니다.</p>
-                    
-                    <div class="flex-container">
-                        <div class="sub-section" id="focus-group">
-                            <h4>Focus Group Interview</h4>
-                            <p>소수의 참여자와 함께 그룹 토론을 통해 사용자의 의견과 경험을 수집합니다.</p>
-                            <div class="content-box">
-                                <ul class="tag-list">
-                                    <li>그룹</li>
-                                    <li>토론</li>
-                                    <li>인터뷰</li>
-                                    <li>의견수집</li>
-                                    <li>집단</li>
-                                    <li>인사이트</li>
-                                </ul>
-                                <p class="description">소수의 참여자와 함께 그룹 토론을 통해 사용자의 의견과 경험을 수집하고 분석하는 정성적 연구 방법</p>
-                                <div class="guide">
-                                    <button class="guide-toggle">
-                                        <span>상세 가이드 확인하기</span>
-                                        <img src="images/arrDown.svg" alt="펼치기" class="arrow-icon">
-                                    </button>
-                                    <div class="guide-content">
-                                        <ul class="guide-list">
-                                            <li class="info-A">
-                                                <div class="guide-item">
-                                                    <h5>SCENARIO 01</h5>
-                                                    <span>이해</span>
-                                                    <p>소수의 참여자와 함께 그룹 토론을 통해 사용자의 의견과 경험을 수집하고 분석하는 정성적 연구 방법</p>
-                                                </div>
-                                            </li>
-                                            <li class="info-B">
-                                                <div class="guide-item">
-                                                    <h5>TIME FRAME</h5>
-                                                    <span>4일</span>
-                                                    <p>준비 1일 (참여자 모집 및 질문지 작성)
-                                                    <br/>진행 2일 (그룹 토론 진행)
-                                                    <br/>분석 1일 (결과 분석 및 인사이트 도출)</p>
-                                                </div>
-                                                <div class="guide-item">
-                                                    <h5>REQUIRED POSITION</h5>
-                                                    <span>5명</span>
-                                                    <p>모더레이터 1명
-                                                        <br/>참여자 4명
-                                                        <br/>관찰자 1명</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="images/img-003.png" alt="Focus Group Interview">
+            <div class="flex-container">
+              <div class="sub-section" id="co-creation">
+                <h4>Co-creation Workshop</h4>
+                <p>코크리에이션 워크샵</p>
+                <div class="content-box">
+                  <ul class="tag-list">
+                    <li>공동</li>
+                    <li>의논</li>
+                    <li>공동창작</li>
+                    <li>협업</li>
+                    <li>그룹활동</li>
+                    <li>이해관계자</li>
+                  </ul>
+                  <p class="description">
+                    프로젝트의 모든 과정에서 다양한 방식을 적용하여 문제 해결을
+                    위해 모든 이해관계자가 참여하여 공동으로 작업하는 순환적이고
+                    협동적인 연구 방법
+                  </p>
+                  <div class="guide">
+                    <button class="guide-toggle">
+                      <span>상세 가이드 확인하기</span>
+                      <img
+                        src="images/arrDown.svg"
+                        alt="펼치기"
+                        class="arrow-icon"
+                      />
+                    </button>
+                    <div class="guide-content">
+                      <ul class="guide-list">
+                        <li class="info-A">
+                          <div class="guide-item">
+                            <h5>SCENARIO 01</h5>
+                            <span>이해</span>
+                            <p>
+                              협업과 커뮤니케이션 강화 목적과 서로의 아이디어를
+                              나누고 피드백을 주고받으며 함께 문제를 해결하면서
+                              협업과 커뮤니케이션 능력을 향상시키기 위한 목적
+                            </p>
+                          </div>
+                        </li>
+                        <li class="info-B">
+                          <div class="guide-item">
+                            <h5>TIME FRAME</h5>
+                            <span>6일</span>
+                            <p>
+                              준비 1~3일 (그룹 크기, 자료의 양에 따라 상이)
+                              <br />활동 2~8시간 (그룹 크기, 자료의 양 및 시스템
+                              복잡성에 따라 상이) <br />인사이트 정리 2일
+                              (복잡성에 따라 상이)
+                            </p>
+                          </div>
+                          <div class="guide-item">
+                            <h5>REQUIRED POSITION</h5>
+                            <span>7+n 명</span>
+                            <p>
+                              촉진자(퍼실리테이터) 최소 1명 <br />프로젝트 리더
+                              <br />스크립터 최소 1명 <br />관련 이해관계자 등
+                              다양한 분야 참여자 5~20명
+                            </p>
+                          </div>
+                        </li>
+                      </ul>
                     </div>
-                    
-                    <div class="flex-container">
-                        <div class="sub-section" id="in-depth">
-                            <h4>In-depth Interview</h4>
-                            <p>개별 사용자와의 심층 인터뷰를 통해 상세한 피드백과 경험을 수집합니다.</p>
-                            <div class="content-box">
-                                <ul class="tag-list">
-                                    <li>심층</li>
-                                    <li>1:1</li>
-                                    <li>인터뷰</li>
-                                    <li>경험</li>
-                                    <li>피드백</li>
-                                    <li>인사이트</li>
-                                </ul>
-                                <p class="description">개별 사용자와의 심층 인터뷰를 통해 상세한 피드백과 경험을 수집하고 분석하는 정성적 연구 방법</p>
-                                <div class="guide">
-                                    <button class="guide-toggle">
-                                        <span>상세 가이드 확인하기</span>
-                                        <img src="images/arrDown.svg" alt="펼치기" class="arrow-icon">
-                                    </button>
-                                    <div class="guide-content">
-                                        <ul class="guide-list">
-                                            <li class="info-A">
-                                                <div class="guide-item">
-                                                    <h5>SCENARIO 01</h5>
-                                                    <span>이해</span>
-                                                    <p>개별 사용자와의 심층 인터뷰를 통해 상세한 피드백과 경험을 수집하고 분석하는 정성적 연구 방법</p>
-                                                </div>
-                                            </li>
-                                            <li class="info-B">
-                                                <div class="guide-item">
-                                                    <h5>TIME FRAME</h5>
-                                                    <span>4일</span>
-                                                    <p>준비 1일 (인터뷰 가이드 작성 및 참여자 모집)
-                                                    <br/>진행 2일 (인터뷰 실시)
-                                                    <br/>분석 1일 (데이터 분석 및 인사이트 도출)</p>
-                                                </div>
-                                                <div class="guide-item">
-                                                    <h5>REQUIRED POSITION</h5>
-                                                    <span>3명</span>
-                                                    <p>인터뷰어 1명
-                                                        <br/>참여자 1명
-                                                        <br/>관찰자 1명</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="images/img-004.png" alt="In-depth Interview">
-                    </div>
-                    
-                    <div class="flex-container">
-                        <div class="sub-section" id="contextual">
-                            <h4>Contextual Inquiry</h4>
-                            <p>사용자의 실제 환경에서 관찰과 인터뷰를 통해 자연스러운 사용 패턴을 파악합니다.</p>
-                            <div class="content-box">
-                                <ul class="tag-list">
-                                    <li>현장</li>
-                                    <li>관찰</li>
-                                    <li>맥락</li>
-                                    <li>인터뷰</li>
-                                    <li>패턴</li>
-                                    <li>분석</li>
-                                </ul>
-                                <p class="description">사용자의 실제 환경에서 관찰과 인터뷰를 통해 자연스러운 사용 패턴을 파악하는 정성적 연구 방법</p>
-                                <div class="guide">
-                                    <button class="guide-toggle">
-                                        <span>상세 가이드 확인하기</span>
-                                        <img src="images/arrDown.svg" alt="펼치기" class="arrow-icon">
-                                    </button>
-                                    <div class="guide-content">
-                                        <ul class="guide-list">
-                                            <li class="info-A">
-                                                <div class="guide-item">
-                                                    <h5>SCENARIO 01</h5>
-                                                    <span>이해</span>
-                                                    <p>사용자의 실제 환경에서 관찰과 인터뷰를 통해 자연스러운 사용 패턴을 파악하는 정성적 연구 방법</p>
-                                                </div>
-                                            </li>
-                                            <li class="info-B">
-                                                <div class="guide-item">
-                                                    <h5>TIME FRAME</h5>
-                                                    <span>5일</span>
-                                                    <p>준비 1일 (관찰 계획 수립)
-                                                    <br/>진행 3일 (현장 관찰 및 인터뷰)
-                                                    <br/>분석 1일 (데이터 분석 및 인사이트 도출)</p>
-                                                </div>
-                                                <div class="guide-item">
-                                                    <h5>REQUIRED POSITION</h5>
-                                                    <span>3명</span>
-                                                    <p>관찰자 1명
-                                                        <br/>참여자 1명
-                                                        <br/>기록자 1명</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="images/img-005.png" alt="Contextual Inquiry">
-                    </div>
-                    
-                    <div class="flex-container">
-                        <div class="sub-section" id="service-safari">
-                            <h4>Service Safari</h4>
-                            <p>서비스 이용 과정을 직접 체험하며 사용자 경험을 분석합니다.</p>
-                            <div class="content-box">
-                                <ul class="tag-list">
-                                    <li>체험</li>
-                                    <li>서비스</li>
-                                    <li>경험</li>
-                                    <li>분석</li>
-                                    <li>문제점</li>
-                                    <li>개선</li>
-                                </ul>
-                                <p class="description">서비스 이용 과정을 직접 체험하며 사용자 경험을 분석하고 개선점을 도출하는 연구 방법</p>
-                                <div class="guide">
-                                    <button class="guide-toggle">
-                                        <span>상세 가이드 확인하기</span>
-                                        <img src="images/arrDown.svg" alt="펼치기" class="arrow-icon">
-                                    </button>
-                                    <div class="guide-content">
-                                        <ul class="guide-list">
-                                            <li class="info-A">
-                                                <div class="guide-item">
-                                                    <h5>SCENARIO 01</h5>
-                                                    <span>이해</span>
-                                                    <p>서비스 이용 과정을 직접 체험하며 사용자 경험을 분석하고 개선점을 도출하는 연구 방법</p>
-                                                </div>
-                                            </li>
-                                            <li class="info-B">
-                                                <div class="guide-item">
-                                                    <h5>TIME FRAME</h5>
-                                                    <span>4일</span>
-                                                    <p>준비 1일 (체험 계획 수립)
-                                                    <br/>진행 2일 (서비스 체험)
-                                                    <br/>분석 1일 (경험 분석 및 개선점 도출)</p>
-                                                </div>
-                                                <div class="guide-item">
-                                                    <h5>REQUIRED POSITION</h5>
-                                                    <span>3명</span>
-                                                    <p>체험자 1명
-                                                        <br/>관찰자 1명
-                                                        <br/>분석가 1명</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="images/img-006.png" alt="Service Safari">
-                    </div>
-                    
-                    <div class="flex-container">
-                        <div class="sub-section" id="expert">
-                            <h4>Expert Interview</h4>
-                            <p>도메인 전문가와의 인터뷰를 통해 전문적인 인사이트를 수집합니다.</p>
-                            <div class="content-box">
-                                <ul class="tag-list">
-                                    <li>전문가</li>
-                                    <li>인터뷰</li>
-                                    <li>지식</li>
-                                    <li>경험</li>
-                                    <li>인사이트</li>
-                                    <li>전략</li>
-                                </ul>
-                                <p class="description">도메인 전문가와의 인터뷰를 통해 전문적인 인사이트를 수집하고 전략을 수립하는 연구 방법</p>
-                                <div class="guide">
-                                    <button class="guide-toggle">
-                                        <span>상세 가이드 확인하기</span>
-                                        <img src="images/arrDown.svg" alt="펼치기" class="arrow-icon">
-                                    </button>
-                                    <div class="guide-content">
-                                        <ul class="guide-list">
-                                            <li class="info-A">
-                                                <div class="guide-item">
-                                                    <h5>SCENARIO 01</h5>
-                                                    <span>이해</span>
-                                                    <p>도메인 전문가와의 인터뷰를 통해 전문적인 인사이트를 수집하고 전략을 수립하는 연구 방법</p>
-                                                </div>
-                                            </li>
-                                            <li class="info-B">
-                                                <div class="guide-item">
-                                                    <h5>TIME FRAME</h5>
-                                                    <span>4일</span>
-                                                    <p>준비 1일 (전문가 선정 및 질문지 작성)
-                                                    <br/>진행 2일 (인터뷰 실시)
-                                                    <br/>분석 1일 (인사이트 도출 및 전략 수립)</p>
-                                                </div>
-                                                <div class="guide-item">
-                                                    <h5>REQUIRED POSITION</h5>
-                                                    <span>3명</span>
-                                                    <p>인터뷰어 1명
-                                                        <br/>전문가 1명
-                                                        <br/>기록자 1명</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="images/img-007.png" alt="Expert Interview">
-                    </div>
-                    
-                    <div class="flex-container">
-                        <div class="sub-section" id="usability">
-                            <h4>Usability Test</h4>
-                            <p>제품이나 서비스의 사용성을 테스트하여 개선점을 발견합니다.</p>
-                            <div class="content-box">
-                                <ul class="tag-list">
-                                    <li>사용성</li>
-                                    <li>테스트</li>
-                                    <li>관찰</li>
-                                    <li>문제점</li>
-                                    <li>개선</li>
-                                    <li>피드백</li>
-                                </ul>
-                                <p class="description">제품이나 서비스의 사용성을 테스트하여 개선점을 발견하고 피드백을 수집하는 연구 방법</p>
-                                <div class="guide">
-                                    <button class="guide-toggle">
-                                        <span>상세 가이드 확인하기</span>
-                                        <img src="images/arrDown.svg" alt="펼치기" class="arrow-icon">
-                                    </button>
-                                    <div class="guide-content">
-                                        <ul class="guide-list">
-                                            <li class="info-A">
-                                                <div class="guide-item">
-                                                    <h5>SCENARIO 01</h5>
-                                                    <span>이해</span>
-                                                    <p>제품이나 서비스의 사용성을 테스트하여 개선점을 발견하고 피드백을 수집하는 연구 방법</p>
-                                                </div>
-                                            </li>
-                                            <li class="info-B">
-                                                <div class="guide-item">
-                                                    <h5>TIME FRAME</h5>
-                                                    <span>5일</span>
-                                                    <p>준비 1일 (테스트 시나리오 작성)
-                                                    <br/>진행 3일 (사용성 테스트)
-                                                    <br/>분석 1일 (결과 분석 및 개선점 도출)</p>
-                                                </div>
-                                                <div class="guide-item">
-                                                    <h5>REQUIRED POSITION</h5>
-                                                    <span>4명</span>
-                                                    <p>테스터 1명
-                                                        <br/>관찰자 1명
-                                                        <br/>기록자 1명
-                                                        <br/>분석가 1명</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="images/img-008.png" alt="Usability Test">
-                    </div>
-                    
-                    <div class="flex-container">
-                        <div class="sub-section" id="persona">
-                            <h4>Persona</h4>
-                            <p>목표 사용자의 특성과 니즈를 구체화하여 페르소나를 작성합니다.</p>
-                            <div class="content-box">
-                                <ul class="tag-list">
-                                    <li>페르소나</li>
-                                    <li>사용자</li>
-                                    <li>특성</li>
-                                    <li>니즈</li>
-                                    <li>목표</li>
-                                    <li>행동</li>
-                                </ul>
-                                <p class="description">목표 사용자의 특성과 니즈를 구체화하여 페르소나를 작성하고 사용자 중심의 디자인을 위한 가이드라인을 제공하는 연구 방법</p>
-                                <div class="guide">
-                                    <button class="guide-toggle">
-                                        <span>상세 가이드 확인하기</span>
-                                        <img src="images/arrDown.svg" alt="펼치기" class="arrow-icon">
-                                    </button>
-                                    <div class="guide-content">
-                                        <ul class="guide-list">
-                                            <li class="info-A">
-                                                <div class="guide-item">
-                                                    <h5>SCENARIO 01</h5>
-                                                    <span>이해</span>
-                                                    <p>목표 사용자의 특성과 니즈를 구체화하여 페르소나를 작성하고 사용자 중심의 디자인을 위한 가이드라인을 제공하는 연구 방법</p>
-                                                </div>
-                                            </li>
-                                            <li class="info-B">
-                                                <div class="guide-item">
-                                                    <h5>TIME FRAME</h5>
-                                                    <span>4일</span>
-                                                    <p>준비 1일 (사용자 데이터 수집)
-                                                    <br/>작성 2일 (페르소나 작성)
-                                                    <br/>검증 1일 (페르소나 검증 및 보완)</p>
-                                                </div>
-                                                <div class="guide-item">
-                                                    <h5>REQUIRED POSITION</h5>
-                                                    <span>3명</span>
-                                                    <p>UX 디자이너 1명
-                                                        <br/>기획자 1명
-                                                        <br/>분석가 1명</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="images/img-009.png" alt="Persona">
-                    </div>
-                    
-                    <div class="flex-container">
-                        <div class="sub-section" id="journey">
-                            <h4>Journey map</h4>
-                            <p>사용자의 서비스 이용 과정을 시각화하여 경험을 분석합니다.</p>
-                            <div class="content-box">
-                                <ul class="tag-list">
-                                    <li>여정</li>
-                                    <li>맵</li>
-                                    <li>경험</li>
-                                    <li>단계</li>
-                                    <li>감정</li>
-                                    <li>개선</li>
-                                </ul>
-                                <p class="description">사용자의 서비스 이용 과정을 시각화하여 경험을 분석하고 개선 기회를 발견하는 연구 방법</p>
-                                <div class="guide">
-                                    <button class="guide-toggle">
-                                        <span>상세 가이드 확인하기</span>
-                                        <img src="images/arrDown.svg" alt="펼치기" class="arrow-icon">
-                                    </button>
-                                    <div class="guide-content">
-                                        <ul class="guide-list">
-                                            <li class="info-A">
-                                                <div class="guide-item">
-                                                    <h5>SCENARIO 01</h5>
-                                                    <span>이해</span>
-                                                    <p>사용자의 서비스 이용 과정을 시각화하여 경험을 분석하고 개선 기회를 발견하는 연구 방법</p>
-                                                </div>
-                                            </li>
-                                            <li class="info-B">
-                                                <div class="guide-item">
-                                                    <h5>TIME FRAME</h5>
-                                                    <span>5일</span>
-                                                    <p>준비 1일 (사용자 데이터 수집)
-                                                    <br/>작성 3일 (여정 지도 작성)
-                                                    <br/>분석 1일 (개선 기회 도출)</p>
-                                                </div>
-                                                <div class="guide-item">
-                                                    <h5>REQUIRED POSITION</h5>
-                                                    <span>3명</span>
-                                                    <p>UX 디자이너 1명
-                                                        <br/>기획자 1명
-                                                        <br/>분석가 1명</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="images/img-010.png" alt="Journey Map">
-                    </div>
-                    
-                    <div class="flex-container">
-                        <div class="sub-section" id="log">
-                            <h4>Log Analytics</h4>
-                            <p>사용자의 서비스 이용 로그를 분석하여 행동 패턴을 파악합니다.</p>
-                            <div class="content-box">
-                                <ul class="tag-list">
-                                    <li>로그</li>
-                                    <li>데이터</li>
-                                    <li>분석</li>
-                                    <li>패턴</li>
-                                    <li>통계</li>
-                                    <li>인사이트</li>
-                                </ul>
-                                <p class="description">사용자의 서비스 이용 로그를 분석하여 행동 패턴을 파악하고 인사이트를 도출하는 정량적 연구 방법</p>
-                                <div class="guide">
-                                    <button class="guide-toggle">
-                                        <span>상세 가이드 확인하기</span>
-                                        <img src="images/arrDown.svg" alt="펼치기" class="arrow-icon">
-                                    </button>
-                                    <div class="guide-content">
-                                        <ul class="guide-list">
-                                            <li class="info-A">
-                                                <div class="guide-item">
-                                                    <h5>SCENARIO 01</h5>
-                                                    <span>이해</span>
-                                                    <p>사용자의 서비스 이용 로그를 분석하여 행동 패턴을 파악하고 인사이트를 도출하는 정량적 연구 방법</p>
-                                                </div>
-                                            </li>
-                                            <li class="info-B">
-                                                <div class="guide-item">
-                                                    <h5>TIME FRAME</h5>
-                                                    <span>4일</span>
-                                                    <p>준비 1일 (로그 데이터 수집)
-                                                    <br/>분석 2일 (데이터 분석)
-                                                    <br/>정리 1일 (인사이트 도출)</p>
-                                                </div>
-                                                <div class="guide-item">
-                                                    <h5>REQUIRED POSITION</h5>
-                                                    <span>3명</span>
-                                                    <p>데이터 분석가 1명
-                                                        <br/>개발자 1명
-                                                        <br/>기획자 1명</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="images/img-011.png" alt="Log Analytics">
-                    </div>
-                    
-                    <div class="flex-container">
-                        <div class="sub-section" id="voc">
-                            <h4>Voice of Customer</h4>
-                            <p>고객의 피드백과 의견을 수집하여 서비스 개선에 활용합니다.</p>
-                            <div class="content-box">
-                                <ul class="tag-list">
-                                    <li>고객</li>
-                                    <li>피드백</li>
-                                    <li>의견</li>
-                                    <li>분석</li>
-                                    <li>개선</li>
-                                    <li>우선순위</li>
-                                </ul>
-                                <p class="description">고객의 피드백과 의견을 수집하여 서비스 개선에 활용하고 우선순위를 설정하는 연구 방법</p>
-                                <div class="guide">
-                                    <button class="guide-toggle">
-                                        <span>상세 가이드 확인하기</span>
-                                        <img src="images/arrDown.svg" alt="펼치기" class="arrow-icon">
-                                    </button>
-                                    <div class="guide-content">
-                                        <ul class="guide-list">
-                                            <li class="info-A">
-                                                <div class="guide-item">
-                                                    <h5>SCENARIO 01</h5>
-                                                    <span>이해</span>
-                                                    <p>고객의 피드백과 의견을 수집하여 서비스 개선에 활용하고 우선순위를 설정하는 연구 방법</p>
-                                                </div>
-                                            </li>
-                                            <li class="info-B">
-                                                <div class="guide-item">
-                                                    <h5>TIME FRAME</h5>
-                                                    <span>5일</span>
-                                                    <p>준비 1일 (피드백 수집 계획)
-                                                    <br/>수집 2일 (피드백 수집)
-                                                    <br/>분석 2일 (데이터 분석 및 우선순위 설정)</p>
-                                                </div>
-                                                <div class="guide-item">
-                                                    <h5>REQUIRED POSITION</h5>
-                                                    <span>3명</span>
-                                                    <p>고객 담당자 1명
-                                                        <br/>분석가 1명
-                                                        <br/>기획자 1명</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="images/img-012.png" alt="Voice of Customer">
-                    </div>
-                    
-                    <div class="flex-container">
-                        <div class="sub-section" id="eyetracking">
-                            <h4>Eyetracking</h4>
-                            <p>사용자의 시선 추적을 통해 인터페이스의 효과성을 분석합니다.</p>
-                            <div class="content-box">
-                                <ul class="tag-list">
-                                    <li>시선</li>
-                                    <li>추적</li>
-                                    <li>패턴</li>
-                                    <li>인터페이스</li>
-                                    <li>평가</li>
-                                    <li>개선</li>
-                                </ul>
-                                <p class="description">사용자의 시선 추적을 통해 인터페이스의 효과성을 분석하고 개선 방안을 도출하는 연구 방법</p>
-                                <div class="guide">
-                                    <button class="guide-toggle">
-                                        <span>상세 가이드 확인하기</span>
-                                        <img src="images/arrDown.svg" alt="펼치기" class="arrow-icon">
-                                    </button>
-                                    <div class="guide-content">
-                                        <ul class="guide-list">
-                                            <li class="info-A">
-                                                <div class="guide-item">
-                                                    <h5>SCENARIO 01</h5>
-                                                    <span>이해</span>
-                                                    <p>사용자의 시선 추적을 통해 인터페이스의 효과성을 분석하고 개선 방안을 도출하는 연구 방법</p>
-                                                </div>
-                                            </li>
-                                            <li class="info-B">
-                                                <div class="guide-item">
-                                                    <h5>TIME FRAME</h5>
-                                                    <span>5일</span>
-                                                    <p>준비 1일 (테스트 계획 수립)
-                                                    <br/>진행 3일 (시선 추적 테스트)
-                                                    <br/>분석 1일 (데이터 분석 및 개선점 도출)</p>
-                                                </div>
-                                                <div class="guide-item">
-                                                    <h5>REQUIRED POSITION</h5>
-                                                    <span>4명</span>
-                                                    <p>테스터 1명
-                                                        <br/>관찰자 1명
-                                                        <br/>분석가 1명
-                                                        <br/>디자이너 1명</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="images/img-013.png" alt="Eyetracking">
-                    </div>
-                    
-                    <div class="flex-container">
-                        <div class="sub-section" id="survey">
-                            <h4>Survey</h4>
-                            <p>대규모 사용자 대상 설문을 통해 정량적 데이터를 수집합니다.</p>
-                            <div class="content-box">
-                                <ul class="tag-list">
-                                    <li>설문</li>
-                                    <li>데이터</li>
-                                    <li>수집</li>
-                                    <li>분석</li>
-                                    <li>통계</li>
-                                    <li>결과</li>
-                                </ul>
-                                <p class="description">대규모 사용자 대상 설문을 통해 정량적 데이터를 수집하고 분석하여 결과를 도출하는 연구 방법</p>
-                                <div class="guide">
-                                    <button class="guide-toggle">
-                                        <span>상세 가이드 확인하기</span>
-                                        <img src="images/arrDown.svg" alt="펼치기" class="arrow-icon">
-                                    </button>
-                                    <div class="guide-content">
-                                        <ul class="guide-list">
-                                            <li class="info-A">
-                                                <div class="guide-item">
-                                                    <h5>SCENARIO 01</h5>
-                                                    <span>이해</span>
-                                                    <p>대규모 사용자 대상 설문을 통해 정량적 데이터를 수집하고 분석하여 결과를 도출하는 연구 방법</p>
-                                                </div>
-                                            </li>
-                                            <li class="info-B">
-                                                <div class="guide-item">
-                                                    <h5>TIME FRAME</h5>
-                                                    <span>7일</span>
-                                                    <p>준비 2일 (설문지 작성 및 배포)
-                                                    <br/>수집 3일 (응답 수집)
-                                                    <br/>분석 2일 (데이터 분석 및 결과 도출)</p>
-                                                </div>
-                                                <div class="guide-item">
-                                                    <h5>REQUIRED POSITION</h5>
-                                                    <span>3명</span>
-                                                    <p>리서처 1명
-                                                        <br/>분석가 1명
-                                                        <br/>기획자 1명</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="images/img-014.png" alt="Survey">
-                    </div>
-                    
-                    <div class="flex-container">
-                        <div class="sub-section" id="voting">
-                            <h4>Voting</h4>
-                            <p>사용자들의 투표를 통해 의견을 수집하고 우선순위를 결정합니다.</p>
-                            <div class="content-box">
-                                <ul class="tag-list">
-                                    <li>투표</li>
-                                    <li>의견</li>
-                                    <li>수집</li>
-                                    <li>분석</li>
-                                    <li>결과</li>
-                                    <li>우선순위</li>
-                                </ul>
-                                <p class="description">사용자들의 투표를 통해 의견을 수집하고 우선순위를 결정하는 연구 방법</p>
-                                <div class="guide">
-                                    <button class="guide-toggle">
-                                        <span>상세 가이드 확인하기</span>
-                                        <img src="images/arrDown.svg" alt="펼치기" class="arrow-icon">
-                                    </button>
-                                    <div class="guide-content">
-                                        <ul class="guide-list">
-                                            <li class="info-A">
-                                                <div class="guide-item">
-                                                    <h5>SCENARIO 01</h5>
-                                                    <span>이해</span>
-                                                    <p>사용자들의 투표를 통해 의견을 수집하고 우선순위를 결정하는 연구 방법</p>
-                                                </div>
-                                            </li>
-                                            <li class="info-B">
-                                                <div class="guide-item">
-                                                    <h5>TIME FRAME</h5>
-                                                    <span>4일</span>
-                                                    <p>준비 1일 (투표 항목 선정)
-                                                    <br/>진행 2일 (투표 실시)
-                                                    <br/>분석 1일 (결과 분석 및 우선순위 결정)</p>
-                                                </div>
-                                                <div class="guide-item">
-                                                    <h5>REQUIRED POSITION</h5>
-                                                    <span>3명</span>
-                                                    <p>기획자 1명
-                                                        <br/>분석가 1명
-                                                        <br/>관리자 1명</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="images/img-015.png" alt="Voting">
-                    </div>
+                  </div>
                 </div>
-            </section>
+              </div>
+              <img src="images/img-001.png" alt="Co-creation Workshop" />
+            </div>
 
-            <section id="define" class="define">
-                <div class="container">
-                    <h3>Define</h3>
-                    <p>수집된 데이터를 분석하고 해결해야 할 문제를 명확히 정의하는 단계입니다.</p>
-                    
-                    <div class="flex-container">
-                        <div class="sub-section" id="affinity">
-                            <h4>Affinity Diagram</h4>
-                            <p>다양한 아이디어와 데이터를 그룹화하여 패턴과 관계를 파악합니다.</p>
-                            <div class="content-box">
-                                <ul class="tag-list">
-                                    <li>데이터</li>
-                                    <li>그룹화</li>
-                                    <li>분류</li>
-                                    <li>패턴</li>
-                                    <li>인사이트</li>
-                                    <li>분석</li>
-                                </ul>
-                                <p class="description">다양한 아이디어와 데이터를 그룹화하여 패턴과 관계를 파악하고 인사이트를 도출하는 연구 방법</p>
-                                <div class="guide">
-                                    <button class="guide-toggle">
-                                        <span>상세 가이드 확인하기</span>
-                                        <img src="images/arrDown.svg" alt="펼치기" class="arrow-icon">
-                                    </button>
-                                    <div class="guide-content">
-                                        <ul class="guide-list">
-                                            <li class="info-A">
-                                                <div class="guide-item">
-                                                    <h5>SCENARIO 01</h5>
-                                                    <span>이해</span>
-                                                    <p>다양한 아이디어와 데이터를 그룹화하여 패턴과 관계를 파악하고 인사이트를 도출하는 연구 방법</p>
-                                                </div>
-                                            </li>
-                                            <li class="info-B">
-                                                <div class="guide-item">
-                                                    <h5>TIME FRAME</h5>
-                                                    <span>3일</span>
-                                                    <p>준비 1일 (데이터 수집 및 정리)
-                                                    <br/>분석 1일 (그룹화 및 패턴 분석)
-                                                    <br/>정리 1일 (인사이트 도출 및 보고서 작성)</p>
-                                                </div>
-                                                <div class="guide-item">
-                                                    <h5>REQUIRED POSITION</h5>
-                                                    <span>2명</span>
-                                                    <p>리서치 담당자 1명
-                                                        <br/>분석가 1명</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="images/img-016.png" alt="Affinity Diagram">
+            <div class="flex-container">
+              <div class="sub-section" id="desk-research">
+                <h4>Desk Research</h4>
+                <p>데스크 리서치</p>
+                <div class="content-box">
+                  <ul class="tag-list">
+                    <li>사용자</li>
+                    <li>트랜드</li>
+                    <li>경쟁사</li>
+                    <li>평판</li>
+                    <li>시장</li>
+                  </ul>
+                  <p class="description">
+                    논문, 서적, 뉴스, 커뮤니티 정보등의 기존 연구 및 자료를
+                    바탕으로 조사하는 기법
+                  </p>
+                  <div class="guide">
+                    <button class="guide-toggle">
+                      <span>상세 가이드 확인하기</span>
+                      <img
+                        src="images/arrDown.svg"
+                        alt="펼치기"
+                        class="arrow-icon"
+                      />
+                    </button>
+                    <div class="guide-content">
+                      <ul class="guide-list">
+                        <li class="info-A">
+                          <div class="guide-item">
+                            <h5>SCENARIO 01</h5>
+                            <span>이해</span>
+                            <p>
+                              사용자, 트렌드, 경쟁사, 평판, 시장에 대한 기본적인
+                              배경지식을 얻어 이해를 높이기 위한 목적
+                            </p>
+                          </div>
+                        </li>
+                        <li class="info-B">
+                          <div class="guide-item">
+                            <h5>TIME FRAME</h5>
+                            <span>3~7일</span>
+                            <p>
+                              리서치 및 자료 정리 3~7일 (리서치의 범위, 자료의
+                              양에 따라 상이)
+                            </p>
+                          </div>
+                          <div class="guide-item">
+                            <h5>REQUIRED POSITION</h5>
+                            <span>1~3명</span>
+                            <p>리서처 1~3명</p>
+                          </div>
+                        </li>
+                      </ul>
                     </div>
-                    
-                    <div class="flex-container">
-                        <div class="sub-section" id="card-sorting">
-                            <h4>Card Sorting</h4>
-                            <p>사용자의 인지 모델을 이해하기 위해 정보를 분류하고 구조화합니다.</p>
-                            <div class="content-box">
-                                <ul class="tag-list">
-                                    <li>카드</li>
-                                    <li>분류</li>
-                                    <li>구조화</li>
-                                    <li>인지</li>
-                                    <li>모델</li>
-                                    <li>정보</li>
-                                </ul>
-                                <p class="description">사용자의 인지 모델을 이해하기 위해 정보를 분류하고 구조화하는 연구 방법</p>
-                                <div class="guide">
-                                    <button class="guide-toggle">
-                                        <span>상세 가이드 확인하기</span>
-                                        <img src="images/arrDown.svg" alt="펼치기" class="arrow-icon">
-                                    </button>
-                                    <div class="guide-content">
-                                        <ul class="guide-list">
-                                            <li class="info-A">
-                                                <div class="guide-item">
-                                                    <h5>SCENARIO 01</h5>
-                                                    <span>이해</span>
-                                                    <p>사용자의 인지 모델을 이해하기 위해 정보를 분류하고 구조화하는 연구 방법</p>
-                                                </div>
-                                            </li>
-                                            <li class="info-B">
-                                                <div class="guide-item">
-                                                    <h5>TIME FRAME</h5>
-                                                    <span>4일</span>
-                                                    <p>준비 1일 (카드 작성 및 준비)
-                                                    <br/>진행 2일 (분류 작업 및 데이터 수집)
-                                                    <br/>분석 1일 (결과 분석 및 구조 설계)</p>
-                                                </div>
-                                                <div class="guide-item">
-                                                    <h5>REQUIRED POSITION</h5>
-                                                    <span>4명</span>
-                                                    <p>UX 디자이너 1명
-                                                        <br/>참여자 2명
-                                                        <br/>관찰자 1명</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="images/img-017.png" alt="Card Sorting">
-                    </div>
-                    
-                    <div class="flex-container">
-                        <div class="sub-section" id="mind-mapping">
-                            <h4>Mind Mapping</h4>
-                            <p>아이디어와 개념을 시각적으로 연결하여 전체적인 구조를 파악합니다.</p>
-                            <div class="content-box">
-                                <ul class="tag-list">
-                                    <li>마인드맵</li>
-                                    <li>아이디어</li>
-                                    <li>개념</li>
-                                    <li>연결</li>
-                                    <li>구조</li>
-                                    <li>시각화</li>
-                                </ul>
-                                <p class="description">아이디어와 개념을 시각적으로 연결하여 전체적인 구조를 파악하고 관계성을 분석하는 연구 방법</p>
-                                <div class="guide">
-                                    <button class="guide-toggle">
-                                        <span>상세 가이드 확인하기</span>
-                                        <img src="images/arrDown.svg" alt="펼치기" class="arrow-icon">
-                                    </button>
-                                    <div class="guide-content">
-                                        <ul class="guide-list">
-                                            <li class="info-A">
-                                                <div class="guide-item">
-                                                    <h5>SCENARIO 01</h5>
-                                                    <span>이해</span>
-                                                    <p>아이디어와 개념을 시각적으로 연결하여 전체적인 구조를 파악하고 관계성을 분석하는 연구 방법</p>
-                                                </div>
-                                            </li>
-                                            <li class="info-B">
-                                                <div class="guide-item">
-                                                    <h5>TIME FRAME</h5>
-                                                    <span>3일</span>
-                                                    <p>준비 1일 (주제 선정 및 자료 수집)
-                                                    <br/>작성 1일 (마인드맵 작성)
-                                                    <br/>분석 1일 (관계성 분석 및 정리)</p>
-                                                </div>
-                                                <div class="guide-item">
-                                                    <h5>REQUIRED POSITION</h5>
-                                                    <span>2명</span>
-                                                    <p>기획자 1명
-                                                        <br/>디자이너 1명</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="images/img-018.png" alt="Mind Mapping">
-                    </div>
-                    
-                    <div class="flex-container">
-                        <div class="sub-section" id="heuristics">
-                            <h4>Heuristics</h4>
-                            <p>사용성 평가를 위한 경험적 방법론을 적용하여 문제점을 발견합니다.</p>
-                            <div class="content-box">
-                                <ul class="tag-list">
-                                    <li>사용성</li>
-                                    <li>평가</li>
-                                    <li>방법론</li>
-                                    <li>문제점</li>
-                                    <li>개선</li>
-                                    <li>검증</li>
-                                </ul>
-                                <p class="description">사용성 평가를 위한 경험적 방법론을 적용하여 문제점을 발견하고 개선 방안을 도출하는 연구 방법</p>
-                                <div class="guide">
-                                    <button class="guide-toggle">
-                                        <span>상세 가이드 확인하기</span>
-                                        <img src="images/arrDown.svg" alt="펼치기" class="arrow-icon">
-                                    </button>
-                                    <div class="guide-content">
-                                        <ul class="guide-list">
-                                            <li class="info-A">
-                                                <div class="guide-item">
-                                                    <h5>SCENARIO 01</h5>
-                                                    <span>이해</span>
-                                                    <p>사용성 평가를 위한 경험적 방법론을 적용하여 문제점을 발견하고 개선 방안을 도출하는 연구 방법</p>
-                                                </div>
-                                            </li>
-                                            <li class="info-B">
-                                                <div class="guide-item">
-                                                    <h5>TIME FRAME</h5>
-                                                    <span>4일</span>
-                                                    <p>준비 1일 (평가 기준 설정)
-                                                    <br/>평가 2일 (문제점 식별 및 심각도 평가)
-                                                    <br/>정리 1일 (개선 방안 도출)</p>
-                                                </div>
-                                                <div class="guide-item">
-                                                    <h5>REQUIRED POSITION</h5>
-                                                    <span>3명</span>
-                                                    <p>UX 전문가 1명
-                                                        <br/>디자이너 1명
-                                                        <br/>개발자 1명</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="images/img-019.png" alt="Heuristics">
-                    </div>
-                    
-                    <div class="flex-container">
-                        <div class="sub-section" id="positioning">
-                            <h4>Positioning Map</h4>
-                            <p>제품이나 서비스의 시장 위치를 시각화하여 경쟁 우위를 파악합니다.</p>
-                            <div class="content-box">
-                                <ul class="tag-list">
-                                    <li>포지셔닝</li>
-                                    <li>시장</li>
-                                    <li>경쟁</li>
-                                    <li>분석</li>
-                                    <li>전략</li>
-                                    <li>우위</li>
-                                </ul>
-                                <p class="description">제품이나 서비스의 시장 위치를 시각화하여 경쟁 우위를 파악하고 전략을 수립하는 연구 방법</p>
-                                <div class="guide">
-                                    <button class="guide-toggle">
-                                        <span>상세 가이드 확인하기</span>
-                                        <img src="images/arrDown.svg" alt="펼치기" class="arrow-icon">
-                                    </button>
-                                    <div class="guide-content">
-                                        <ul class="guide-list">
-                                            <li class="info-A">
-                                                <div class="guide-item">
-                                                    <h5>SCENARIO 01</h5>
-                                                    <span>이해</span>
-                                                    <p>제품이나 서비스의 시장 위치를 시각화하여 경쟁 우위를 파악하고 전략을 수립하는 연구 방법</p>
-                                                </div>
-                                            </li>
-                                            <li class="info-B">
-                                                <div class="guide-item">
-                                                    <h5>TIME FRAME</h5>
-                                                    <span>5일</span>
-                                                    <p>준비 2일 (경쟁사 분석 및 데이터 수집)
-                                                    <br/>작성 2일 (포지셔닝 맵 작성)
-                                                    <br/>분석 1일 (전략 수립)</p>
-                                                </div>
-                                                <div class="guide-item">
-                                                    <h5>REQUIRED POSITION</h5>
-                                                    <span>4명</span>
-                                                    <p>마케터 1명
-                                                        <br/>전략가 1명
-                                                        <br/>분석가 1명
-                                                        <br/>디자이너 1명</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="images/img-020.png" alt="Positioning Map">
-                    </div>
+                  </div>
                 </div>
-            </section>
+              </div>
+              <img src="images/img-002.png" alt="Desk Research" />
+            </div>
+          </div>
+        </section>
 
-            <section id="develop" class="develop">
-                <div class="container">
-                    <h3>Develop</h3>
-                    <p>정의된 문제를 해결하기 위한 솔루션을 개발하고 구현하는 단계입니다.</p>
-                    
-                    <div class="flex-container">
-                        <div class="sub-section" id="mental-model">
-                            <h4>Mental Model</h4>
-                            <p>사용자의 인지 모델을 기반으로 서비스 구조를 설계합니다.</p>
-                            <div class="content-box">
-                                <ul class="tag-list">
-                                    <li>인지</li>
-                                    <li>모델</li>
-                                    <li>구조</li>
-                                    <li>설계</li>
-                                    <li>사용자</li>
-                                    <li>분석</li>
-                                </ul>
-                                <p class="description">사용자의 인지 모델을 기반으로 서비스 구조를 설계하고 구현 방안을 도출하는 연구 방법</p>
-                                <div class="guide">
-                                    <button class="guide-toggle">
-                                        <span>상세 가이드 확인하기</span>
-                                        <img src="images/arrDown.svg" alt="펼치기" class="arrow-icon">
-                                    </button>
-                                    <div class="guide-content">
-                                        <ul class="guide-list">
-                                            <li class="info-A">
-                                                <div class="guide-item">
-                                                    <h5>SCENARIO 01</h5>
-                                                    <span>이해</span>
-                                                    <p>사용자의 인지 모델을 기반으로 서비스 구조를 설계하고 구현 방안을 도출하는 연구 방법</p>
-                                                </div>
-                                            </li>
-                                            <li class="info-B">
-                                                <div class="guide-item">
-                                                    <h5>TIME FRAME</h5>
-                                                    <span>5일</span>
-                                                    <p>준비 1일 (사용자 행동 분석)
-                                                    <br/>설계 2일 (인지 모델 구축)
-                                                    <br/>구현 2일 (서비스 구조 설계)</p>
-                                                </div>
-                                                <div class="guide-item">
-                                                    <h5>REQUIRED POSITION</h5>
-                                                    <span>3명</span>
-                                                    <p>UX 디자이너 1명
-                                                        <br/>기획자 1명
-                                                        <br/>개발자 1명</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="images/img-021.png" alt="Mental Model">
-                    </div>
-                    
-                    <div class="flex-container">
-                        <div class="sub-section" id="expert-solutions">
-                            <h4>Expert Solutions</h4>
-                            <p>전문가의 지식과 경험을 활용하여 최적의 솔루션을 도출합니다.</p>
-                            <div class="content-box">
-                                <ul class="tag-list">
-                                    <li>전문가</li>
-                                    <li>솔루션</li>
-                                    <li>지식</li>
-                                    <li>경험</li>
-                                    <li>최적화</li>
-                                    <li>구현</li>
-                                </ul>
-                                <p class="description">전문가의 지식과 경험을 활용하여 최적의 솔루션을 도출하고 구현 계획을 수립하는 연구 방법</p>
-                                <div class="guide">
-                                    <button class="guide-toggle">
-                                        <span>상세 가이드 확인하기</span>
-                                        <img src="images/arrDown.svg" alt="펼치기" class="arrow-icon">
-                                    </button>
-                                    <div class="guide-content">
-                                        <ul class="guide-list">
-                                            <li class="info-A">
-                                                <div class="guide-item">
-                                                    <h5>SCENARIO 01</h5>
-                                                    <span>이해</span>
-                                                    <p>전문가의 지식과 경험을 활용하여 최적의 솔루션을 도출하고 구현 계획을 수립하는 연구 방법</p>
-                                                </div>
-                                            </li>
-                                            <li class="info-B">
-                                                <div class="guide-item">
-                                                    <h5>TIME FRAME</h5>
-                                                    <span>4일</span>
-                                                    <p>준비 1일 (전문가 선정 및 자료 준비)
-                                                    <br/>기획 2일 (솔루션 기획 및 검증)
-                                                    <br/>정리 1일 (구현 계획 수립)</p>
-                                                </div>
-                                                <div class="guide-item">
-                                                    <h5>REQUIRED POSITION</h5>
-                                                    <span>4명</span>
-                                                    <p>전문가 2명
-                                                        <br/>기획자 1명
-                                                        <br/>개발자 1명</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="images/img-022.png" alt="Expert Solutions">
-                    </div>
-                </div>
-            </section>
+        <section id="discover" class="discover">
+          <div class="container">
+            <h3>Discover</h3>
+            <p>
+              사용자의 니즈와 행동을 깊이 있게 이해하고 인사이트를 도출하는
+              단계입니다.
+            </p>
 
-            <section id="deliver" class="deliver">
-                <div class="container">
-                    <h3>Deliver & Validation</h3>
-                    <p>개발된 솔루션을 검증하고 최종 결과물을 전달하는 단계입니다.</p>
-                    
-                    <div class="flex-container">
-                        <div class="sub-section" id="service-prototyping">
-                            <h4>Service Prototyping</h4>
-                            <p>서비스의 핵심 가치와 경험을 빠르게 구현하여 검증합니다.</p>
-                            <div class="content-box">
-                                <ul class="tag-list">
-                                    <li>프로토타입</li>
-                                    <li>서비스</li>
-                                    <li>구현</li>
-                                    <li>검증</li>
-                                    <li>피드백</li>
-                                    <li>개선</li>
-                                </ul>
-                                <p class="description">서비스의 핵심 가치와 경험을 빠르게 구현하여 검증하고 피드백을 수집하는 연구 방법</p>
-                                <div class="guide">
-                                    <button class="guide-toggle">
-                                        <span>상세 가이드 확인하기</span>
-                                        <img src="images/arrDown.svg" alt="펼치기" class="arrow-icon">
-                                    </button>
-                                    <div class="guide-content">
-                                        <ul class="guide-list">
-                                            <li class="info-A">
-                                                <div class="guide-item">
-                                                    <h5>SCENARIO 01</h5>
-                                                    <span>이해</span>
-                                                    <p>서비스의 핵심 가치와 경험을 빠르게 구현하여 검증하고 피드백을 수집하는 연구 방법</p>
-                                                </div>
-                                            </li>
-                                            <li class="info-B">
-                                                <div class="guide-item">
-                                                    <h5>TIME FRAME</h5>
-                                                    <span>5일</span>
-                                                    <p>준비 1일 (프로토타입 기획)
-                                                    <br/>제작 2일 (프로토타입 구현)
-                                                    <br/>테스트 2일 (사용자 테스트 및 피드백)</p>
-                                                </div>
-                                                <div class="guide-item">
-                                                    <h5>REQUIRED POSITION</h5>
-                                                    <span>4명</span>
-                                                    <p>디자이너 1명
-                                                        <br/>개발자 1명
-                                                        <br/>테스터 1명
-                                                        <br/>관찰자 1명</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="images/img-023.png" alt="Service Prototyping">
+            <div class="flex-container">
+              <div class="sub-section" id="focus-group">
+                <h4>Focus Group Interview</h4>
+                <p>표적 집단 면접법</p>
+                <div class="content-box">
+                  <ul class="tag-list">
+                    <li>초점집단면접법</li>
+                    <li>FGI</li>
+                    <li>집단면접</li>
+                    <li>토론</li>
+                    <li>정성적조사</li>
+                  </ul>
+                  <p class="description">
+                    표적시장으로 예상되는 소비자를 일정한 자격기준에 따라 6~12명
+                    정도 선발하여, 한 장소에 모아 모더레이터의 진행 아래
+                    조사목적과 관련된 토론
+                  </p>
+                  <div class="guide">
+                    <button class="guide-toggle">
+                      <span>상세 가이드 확인하기</span>
+                      <img
+                        src="images/arrDown.svg"
+                        alt="펼치기"
+                        class="arrow-icon"
+                      />
+                    </button>
+                    <div class="guide-content">
+                      <ul class="guide-list">
+                        <li class="info-A">
+                          <div class="guide-item">
+                            <h5>SCENARIO 01</h5>
+                            <span>이해</span>
+                            <p>
+                              디자인, 성능, 사용성에 전반적인 선호도 등
+                              분석하고자하는 목적에 대해 원하는 타겟에 맞는
+                              사용자들의 정성적 의견을 이해하기 위한 목적
+                            </p>
+                          </div>
+                        </li>
+                        <li class="info-B">
+                          <div class="guide-item">
+                            <h5>TIME FRAME</h5>
+                            <span>6일</span>
+                            <p>
+                              사전 준비(질문 제작 및 면접 대상자 모집) 3일
+                              <br />집단 면접 진행 1일(약 45분 ~ 120분)<br />산출물
+                              정리 2일
+                            </p>
+                          </div>
+                          <div class="guide-item">
+                            <h5>REQUIRED POSITION</h5>
+                            <span>8~14명</span>
+                            <p>
+                              진행자(모더레이터) 1명 <br />집단 면접 대상자
+                              6~12명 <br />기록 및 정리자(스크립터) 1명
+                            </p>
+                          </div>
+                        </li>
+                      </ul>
                     </div>
-                    
-                    <div class="flex-container">
-                        <div class="sub-section" id="ux-flow">
-                            <h4>UX Flow</h4>
-                            <p>사용자 경험의 흐름을 설계하고 최적화합니다.</p>
-                            <div class="content-box">
-                                <ul class="tag-list">
-                                    <li>UX</li>
-                                    <li>흐름</li>
-                                    <li>설계</li>
-                                    <li>최적화</li>
-                                    <li>인터랙션</li>
-                                    <li>경험</li>
-                                </ul>
-                                <p class="description">사용자 경험의 흐름을 설계하고 최적화하여 인터랙션을 정의하는 연구 방법</p>
-                                <div class="guide">
-                                    <button class="guide-toggle">
-                                        <span>상세 가이드 확인하기</span>
-                                        <img src="images/arrDown.svg" alt="펼치기" class="arrow-icon">
-                                    </button>
-                                    <div class="guide-content">
-                                        <ul class="guide-list">
-                                            <li class="info-A">
-                                                <div class="guide-item">
-                                                    <h5>SCENARIO 01</h5>
-                                                    <span>이해</span>
-                                                    <p>사용자 경험의 흐름을 설계하고 최적화하여 인터랙션을 정의하는 연구 방법</p>
-                                                </div>
-                                            </li>
-                                            <li class="info-B">
-                                                <div class="guide-item">
-                                                    <h5>TIME FRAME</h5>
-                                                    <span>4일</span>
-                                                    <p>준비 1일 (사용자 여정 분석)
-                                                    <br/>설계 2일 (흐름 설계 및 최적화)
-                                                    <br/>정리 1일 (구현 가이드 작성)</p>
-                                                </div>
-                                                <div class="guide-item">
-                                                    <h5>REQUIRED POSITION</h5>
-                                                    <span>3명</span>
-                                                    <p>UX 디자이너 1명
-                                                        <br/>기획자 1명
-                                                        <br/>개발자 1명</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="images/img-024.png" alt="UX Flow">
-                    </div>
-                    
-                    <div class="flex-container">
-                        <div class="sub-section" id="flow-chart">
-                            <h4>Flow Chart</h4>
-                            <p>서비스의 프로세스와 로직을 시각화하여 명확히 합니다.</p>
-                            <div class="content-box">
-                                <ul class="tag-list">
-                                    <li>플로우</li>
-                                    <li>차트</li>
-                                    <li>프로세스</li>
-                                    <li>로직</li>
-                                    <li>시각화</li>
-                                    <li>문서화</li>
-                                </ul>
-                                <p class="description">서비스의 프로세스와 로직을 시각화하여 명확히 하고 문서화하는 연구 방법</p>
-                                <div class="guide">
-                                    <button class="guide-toggle">
-                                        <span>상세 가이드 확인하기</span>
-                                        <img src="images/arrDown.svg" alt="펼치기" class="arrow-icon">
-                                    </button>
-                                    <div class="guide-content">
-                                        <ul class="guide-list">
-                                            <li class="info-A">
-                                                <div class="guide-item">
-                                                    <h5>SCENARIO 01</h5>
-                                                    <span>이해</span>
-                                                    <p>서비스의 프로세스와 로직을 시각화하여 명확히 하고 문서화하는 연구 방법</p>
-                                                </div>
-                                            </li>
-                                            <li class="info-B">
-                                                <div class="guide-item">
-                                                    <h5>TIME FRAME</h5>
-                                                    <span>3일</span>
-                                                    <p>준비 1일 (프로세스 분석)
-                                                    <br/>작성 1일 (플로우 차트 작성)
-                                                    <br/>검증 1일 (로직 검증 및 문서화)</p>
-                                                </div>
-                                                <div class="guide-item">
-                                                    <h5>REQUIRED POSITION</h5>
-                                                    <span>2명</span>
-                                                    <p>기획자 1명
-                                                        <br/>개발자 1명</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="images/img-025.png" alt="Flow Chart">
-                    </div>
-                    
-                    <div class="flex-container">
-                        <div class="sub-section" id="ab-testing">
-                            <h4>A/B Testing</h4>
-                            <p>다양한 버전을 비교하여 최적의 솔루션을 도출합니다.</p>
-                            <div class="content-box">
-                                <ul class="tag-list">
-                                    <li>A/B</li>
-                                    <li>테스트</li>
-                                    <li>비교</li>
-                                    <li>최적화</li>
-                                    <li>데이터</li>
-                                    <li>분석</li>
-                                </ul>
-                                <p class="description">다양한 버전을 비교하여 최적의 솔루션을 도출하고 데이터를 기반으로 분석하는 연구 방법</p>
-                                <div class="guide">
-                                    <button class="guide-toggle">
-                                        <span>상세 가이드 확인하기</span>
-                                        <img src="images/arrDown.svg" alt="펼치기" class="arrow-icon">
-                                    </button>
-                                    <div class="guide-content">
-                                        <ul class="guide-list">
-                                            <li class="info-A">
-                                                <div class="guide-item">
-                                                    <h5>SCENARIO 01</h5>
-                                                    <span>이해</span>
-                                                    <p>다양한 버전을 비교하여 최적의 솔루션을 도출하고 데이터를 기반으로 분석하는 연구 방법</p>
-                                                </div>
-                                            </li>
-                                            <li class="info-B">
-                                                <div class="guide-item">
-                                                    <h5>TIME FRAME</h5>
-                                                    <span>7일</span>
-                                                    <p>준비 2일 (테스트 설계 및 버전 준비)
-                                                    <br/>진행 3일 (데이터 수집)
-                                                    <br/>분석 2일 (결과 분석 및 최적화)</p>
-                                                </div>
-                                                <div class="guide-item">
-                                                    <h5>REQUIRED POSITION</h5>
-                                                    <span>4명</span>
-                                                    <p>데이터 분석가 1명
-                                                        <br/>개발자 1명
-                                                        <br/>디자이너 1명
-                                                        <br/>기획자 1명</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="images/img-026.png" alt="A/B Testing">
-                    </div>
+                  </div>
                 </div>
-            </section>
-        </main>
+              </div>
+              <img src="images/img-003.png" alt="Focus Group Interview" />
+            </div>
+
+            <div class="flex-container">
+              <div class="sub-section" id="in-depth">
+                <h4>In-depth Interview</h4>
+                <p>심층 인터뷰</p>
+                <div class="content-box">
+                  <ul class="tag-list">
+                    <li>IDI</li>
+                    <li>1:1</li>
+                    <li>심층분석</li>
+                    <li>정성조사</li>
+                    <li>인터뷰</li>
+                  </ul>
+                  <p class="description">
+                    조사 대상자에게 특정 주제에 대한 정보를 수집하는 방법으로써
+                    주로 조사자와 응답자간의 1:1 개별면접 형태로 진행하는 것
+                  </p>
+                  <div class="guide">
+                    <button class="guide-toggle">
+                      <span>상세 가이드 확인하기</span>
+                      <img
+                        src="images/arrDown.svg"
+                        alt="펼치기"
+                        class="arrow-icon"
+                      />
+                    </button>
+                    <div class="guide-content">
+                      <ul class="guide-list">
+                        <li class="info-A">
+                          <div class="guide-item">
+                            <h5>SCENARIO 01</h5>
+                            <span>이해</span>
+                            <p>
+                              조사 대상자에게 특정 주제에 대한 정보를 수집하는
+                              방법으로써 주로 조사자와 응답자간의 1:1 개별면접
+                              형태로 진행하는 것
+                            </p>
+                          </div>
+                        </li>
+                        <li class="info-B">
+                          <div class="guide-item">
+                            <h5>TIME FRAME</h5>
+                            <span>10일</span>
+                            <p>
+                              준비기간 4일
+                              <br />
+                              실행기간 3일 (그룹 크기, 인원 수에 따라 상이)
+                              <br />
+                              정리/분석 기간 3일 (그룹 크기, 인원 수에 따라
+                              상이)
+                            </p>
+                          </div>
+                          <div class="guide-item">
+                            <h5>REQUIRED POSITION</h5>
+                            <span>4+n명</span>
+                            <p>
+                              진행자(모더레이터) 1명<br />
+                              기록자(스크립터) 1명<br />
+                              서포트 컨설턴트 1명<br />
+                              인터뷰 대상자 1+n명
+                            </p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img src="images/img-004.png" alt="In-depth Interview" />
+            </div>
+
+            <div class="flex-container">
+              <div class="sub-section" id="contextual">
+                <h4>Contextual Inquiry</h4>
+                <p>사용자 리서치 정황조사(맥락 질문법)</p>
+                <div class="content-box">
+                  <ul class="tag-list">
+                    <li>필드리서치</li>
+                    <li>깊이있는조사</li>
+                    <li>유연한대응</li>
+                    <li>상호작용</li>
+                    <li>친숙한환경</li>
+                  </ul>
+                  <p class="description">
+                    관찰자가 관찰 대상자가 생활하는 장소에 직접 가서 대상의
+                    행동을 관찰하고 경험하고 즉각적으로 대화하는 리서치 방식
+                  </p>
+                  <div class="guide">
+                    <button class="guide-toggle">
+                      <span>상세 가이드 확인하기</span>
+                      <img
+                        src="images/arrDown.svg"
+                        alt="펼치기"
+                        class="arrow-icon"
+                      />
+                    </button>
+                    <div class="guide-content">
+                      <ul class="guide-list">
+                        <li class="info-A">
+                          <div class="guide-item">
+                            <h5>SCENARIO 01</h5>
+                            <span>이해</span>
+                            <p>
+                              사용자가 어떤 업무를 어떻게 행동하는지를 관찰하고,
+                              사용하는 물건에 대한 데이터를 수집하여 실제
+                              업무환경에서 나타나는 니즈를 이해하기 위한 목적
+                            </p>
+                          </div>
+                        </li>
+                        <li class="info-B">
+                          <div class="guide-item">
+                            <h5>TIME FRAME</h5>
+                            <span>3일~n일</span>
+                            <p>
+                              준비기간 n일 <br />
+                              실행기간 1일 <br />
+                              정리/분석 기간 2일
+                            </p>
+                          </div>
+                          <div class="guide-item">
+                            <h5>REQUIRED POSITION</h5>
+                            <span>4명</span>
+                            진행자(모더레이터) 1명 <br />
+                            기록자(스크립터) 1명 <br />
+                            서포트 컨설턴트(사전준비, 현장 서포트, 산출물 정리
+                            등) 1~3명 <br />
+                            관찰 대상자 1명
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img src="images/img-005.png" alt="Contextual Inquiry" />
+            </div>
+
+            <div class="flex-container">
+              <div class="sub-section" id="service-safari">
+                <h4>Service Safari</h4>
+                <p>서비스 사파리</p>
+                <div class="content-box">
+                  <ul class="tag-list">
+                    <li>직접경험</li>
+                    <li>관찰</li>
+                    <li>다양한상황</li>
+                    <li>필드리서치</li>
+                  </ul>
+                  <p class="description">
+                    서비스가 제공되는 실제 환경에서 관찰하고 기록하며 직접 고객
+                    입장이 되어 고객 경험을 개선하기 위한 부분이 어디인지
+                    이해하기 위한 목적
+                  </p>
+                  <div class="guide">
+                    <button class="guide-toggle">
+                      <span>상세 가이드 확인하기</span>
+                      <img
+                        src="images/arrDown.svg"
+                        alt="펼치기"
+                        class="arrow-icon"
+                      />
+                    </button>
+                    <div class="guide-content">
+                      <ul class="guide-list">
+                        <li class="info-A">
+                          <div class="guide-item">
+                            <h5>SCENARIO 01</h5>
+                            <span>이해</span>
+                            <p>
+                              서비스가 제공되는 실제 환경에서 관찰하고 기록하며
+                              직접 고객 입장이 되어 고객 경험을 개선하기 위한
+                              부분이 어디인지 이해하기 위한 목적
+                            </p>
+                          </div>
+                        </li>
+                        <li class="info-B">
+                          <div class="guide-item">
+                            <h5>TIME FRAME</h5>
+                            <span>3일</span>
+                            <p>
+                              사전 준비 1일 <br />
+                              실행 기간 1~2일 <br />
+                              정리 및 분석 1~3일
+                            </p>
+                          </div>
+                          <div class="guide-item">
+                            <h5>REQUIRED POSITION</h5>
+                            <span>n명</span>
+                            <p>
+                              진행자 1명<br />
+                              서비스 경험자 n명
+                            </p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img src="images/img-006.png" alt="Service Safari" />
+            </div>
+
+            <div class="flex-container">
+              <div class="sub-section" id="expert">
+                <h4>Expert Interview</h4>
+                <p>전문가 인터뷰</p>
+                <div class="content-box">
+                  <ul class="tag-list">
+                    <li>인터뷰</li>
+                    <li>면대면</li>
+                    <li>질적분석</li>
+                    <li>심층통찰</li>
+                  </ul>
+                  <p class="description">
+                    전문가를 섭외하여 인터뷰를 진행해 해당 분야에 대한 심층적인
+                    통찰력 습득 가능한 방법론
+                  </p>
+                  <div class="guide">
+                    <button class="guide-toggle">
+                      <span>상세 가이드 확인하기</span>
+                      <img
+                        src="images/arrDown.svg"
+                        alt="펼치기"
+                        class="arrow-icon"
+                      />
+                    </button>
+                    <div class="guide-content">
+                      <ul class="guide-list">
+                        <li class="info-A">
+                          <div class="guide-item">
+                            <h5>SCENARIO 01</h5>
+                            <span>발견</span>
+                            <p>
+                              제품이나 서비스를 개발하는 데 필요한 정보와
+                              방향성을 제시 및 제품이나 서비스의 개발 방향을
+                              미리 예측하여 향후 문제를 미연에 방지하기 위한
+                              목적
+                            </p>
+                          </div>
+                        </li>
+                        <li class="info-B">
+                          <div class="guide-item">
+                            <h5>TIME FRAME</h5>
+                            <span>7일</span>
+                            <p>
+                              사전 준비 3일 <br />
+                              인터뷰 진행 1~2일 <br />
+                              정리 및 분석 2일
+                            </p>
+                          </div>
+                          <div class="guide-item">
+                            <h5>REQUIRED POSITION</h5>
+                            <span>3명</span>
+                            <p>
+                              스크립터 1명 <br />
+                              인터뷰대상자 1~2명 <br />
+                              서포터 1명
+                            </p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img src="images/img-007.png" alt="Expert Interview" />
+            </div>
+
+            <div class="flex-container">
+              <div class="sub-section" id="usability">
+                <h4>Usability Test</h4>
+                <p>사용성 테스트</p>
+                <div class="content-box">
+                  <ul class="tag-list">
+                    <li>서비스개선</li>
+                    <li>인사이트</li>
+                    <li>사용성확인</li>
+                    <li>만족도확인</li>
+                    <li>가설검증</li>
+                  </ul>
+                  <p class="description">
+                    서비스의 실제 사용자를 대상으로, 어떻게 서비스를 사용하는지
+                    관찰하는 조사방법
+                  </p>
+                  <div class="guide">
+                    <button class="guide-toggle">
+                      <span>상세 가이드 확인하기</span>
+                      <img
+                        src="images/arrDown.svg"
+                        alt="펼치기"
+                        class="arrow-icon"
+                      />
+                    </button>
+                    <div class="guide-content">
+                      <ul class="guide-list">
+                        <li class="info-A">
+                          <div class="guide-item">
+                            <h5>SCENARIO 01</h5>
+                            <span>발견</span>
+                            <p>
+                              제품 개발 초기 단계에서 실제 사용자를 모집하여,
+                              실질적인 피드백과 의견을 수집하고 니즈와
+                              요구사항을 개발과정에서 반영하기 위한 목적
+                            </p>
+                          </div>
+                        </li>
+                        <li class="info-B">
+                          <div class="guide-item">
+                            <h5>TIME FRAME</h5>
+                            <span>10일</span>
+                            <p>
+                              사전 준비 3일 <br />
+                              테스트 진행 5일 <br />
+                              정리 및 분석 2일
+                            </p>
+                          </div>
+                          <div class="guide-item">
+                            <h5>REQUIRED POSITION</h5>
+                            <span>10명</span>
+                            <p>
+                              진행자 1명 <br />
+                              테스트 진행자 5~6명 <br />
+                              스크립터 1명 <br />
+                              서포터 3명
+                            </p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img src="images/img-008.png" alt="Usability Test" />
+            </div>
+
+            <div class="flex-container">
+              <div class="sub-section" id="persona">
+                <h4>Persona</h4>
+                <p>퍼소나</p>
+                <div class="content-box">
+                  <ul class="tag-list">
+                    <li>가상사용자</li>
+                    <li>특성부여</li>
+                    <li>사용자관점</li>
+                    <li>디테일설정</li>
+                    <li>특정집단대표</li>
+                  </ul>
+                  <p class="description">
+                    서비스 사용자 중 특정 카테고리를 대표하는 가상의 인물을
+                    만들어, 특정 상황과 환경속에서 어떻게 행동하는지
+                    예측/분석하는 방법론
+                  </p>
+                  <div class="guide">
+                    <button class="guide-toggle">
+                      <span>상세 가이드 확인하기</span>
+                      <img
+                        src="images/arrDown.svg"
+                        alt="펼치기"
+                        class="arrow-icon"
+                      />
+                    </button>
+                    <div class="guide-content">
+                      <ul class="guide-list">
+                        <li class="info-A">
+                          <div class="guide-item">
+                            <h5>SCENARIO 01</h5>
+                            <span>이해</span>
+                            <p>
+                              사용자 관점에서 고객의 특성 및 니즈, 페인포인트를
+                              서비스 전반에 걸쳐 총체적으로 파악하기 위한 목적
+                            </p>
+                          </div>
+                        </li>
+                        <li class="info-B">
+                          <div class="guide-item">
+                            <h5>TIME FRAME</h5>
+                            <span>4일</span>
+                            <p>
+                              사전 준비 1일 <br />
+                              퍼소나 작성 1~2일 <br />
+                              정리 및 분석 1일
+                            </p>
+                          </div>
+                          <div class="guide-item">
+                            <h5>REQUIRED POSITION</h5>
+                            <span>4명</span>
+                            <p>
+                              퍼소나 작성자 1명 <br />
+                              논의자 2명 <br />
+                              서포터 1명
+                            </p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img src="images/img-009.png" alt="Persona" />
+            </div>
+
+            <div class="flex-container">
+              <div class="sub-section" id="journey">
+                <h4>Journey map</h4>
+                <p>고객 여정 지도</p>
+                <div class="content-box">
+                  <ul class="tag-list">
+                    <li>고객경험분석</li>
+                    <li>페인포인트발견</li>
+                    <li>현황검증</li>
+                    <li>단계별분석</li>
+                    <li>CustormerJourneyMap</li>
+                  </ul>
+                  <p class="description">
+                    사용자가 목적을 달성하기 위해 행하는 일련의 과정을 시각화한
+                    것
+                  </p>
+                  <div class="guide">
+                    <button class="guide-toggle">
+                      <span>상세 가이드 확인하기</span>
+                      <img
+                        src="images/arrDown.svg"
+                        alt="펼치기"
+                        class="arrow-icon"
+                      />
+                    </button>
+                    <div class="guide-content">
+                      <ul class="guide-list">
+                        <li class="info-A">
+                          <div class="guide-item">
+                            <h5>SCENARIO 01</h5>
+                            <span>이해</span>
+                            <p>
+                              고객 경험과 니즈를 파악하고 이해하기 위한 목적
+                            </p>
+                          </div>
+                        </li>
+                        <li class="info-B">
+                          <div class="guide-item">
+                            <h5>TIME FRAME</h5>
+                            <span>7일</span>
+                            <p>
+                              여정 발굴 1일 <br />
+                              여정 수행 4일 <br />
+                              정리 및 분석 2일
+                            </p>
+                          </div>
+                          <div class="guide-item">
+                            <h5>REQUIRED POSITION</h5>
+                            <span>5명</span>
+                            <p>
+                              모더레이터 1명 <br />
+                              테스크/행동 작성자(스크립터) 1명 <br />
+                              여정 수행자 1명 <br />
+                              서포터 2명
+                            </p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img src="images/img-010.png" alt="Journey Map" />
+            </div>
+
+            <div class="flex-container">
+              <div class="sub-section" id="log">
+                <h4>Log Analytics</h4>
+                <p>로그 분석</p>
+                <div class="content-box">
+                  <ul class="tag-list">
+                    <li>데이터분석</li>
+                    <li>기록</li>
+                    <li>정량적데이터</li>
+                    <li>테스트</li>
+                    <li>분석프레임</li>
+                    <li>정량적데이터</li>
+                  </ul>
+                  <p class="description">
+                    서비스 이용 시 유저가 남긴 로그를 바탕으로, 사용경험, 니즈를
+                    추정하여 인사이트를 얻는 방법
+                  </p>
+                  <div class="guide">
+                    <button class="guide-toggle">
+                      <span>상세 가이드 확인하기</span>
+                      <img
+                        src="images/arrDown.svg"
+                        alt="펼치기"
+                        class="arrow-icon"
+                      />
+                    </button>
+                    <div class="guide-content">
+                      <ul class="guide-list">
+                        <li class="info-A">
+                          <div class="guide-item">
+                            <h5>SCENARIO 01</h5>
+                            <span>이해</span>
+                            <p>
+                              웹사이트의 사용자 행동 로그를 분석하여 사용자들이
+                              가장 자주 사용하는 기능을 파악하기 위한 목적
+                            </p>
+                          </div>
+                        </li>
+                        <li class="info-B">
+                          <div class="guide-item">
+                            <h5>TIME FRAME</h5>
+                            <span>3일</span>
+                            <p>분석 3일</p>
+                          </div>
+                          <div class="guide-item">
+                            <h5>REQUIRED POSITION</h5>
+                            <span>3명</span>
+                            <p>
+                              메인 컨설턴트(분석 및 설계) 1명 <br />
+                              서포트 컨설턴트(정리 등) 2~3명 <br />
+                              엔지니어 및 개발자 1~2명
+                            </p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img src="images/img-011.png" alt="Log Analytics" />
+            </div>
+
+            <div class="flex-container">
+              <div class="sub-section" id="voc">
+                <h4>Voice of Customer</h4>
+                <p>고객의 소리</p>
+                <div class="content-box">
+                  <ul class="tag-list">
+                    <li>고객센터</li>
+                    <li>여론조사</li>
+                    <li>고객과 기업의 의사소통</li>
+                  </ul>
+                  <p class="description">
+                    고객의 서비스에 대한 경험과 기대치에 대한 고객의 피드백
+                  </p>
+                  <div class="guide">
+                    <button class="guide-toggle">
+                      <span>상세 가이드 확인하기</span>
+                      <img
+                        src="images/arrDown.svg"
+                        alt="펼치기"
+                        class="arrow-icon"
+                      />
+                    </button>
+                    <div class="guide-content">
+                      <ul class="guide-list">
+                        <li class="info-A">
+                          <div class="guide-item">
+                            <h5>SCENARIO 01</h5>
+                            <span>이해</span>
+                            <p>
+                              서비스에 대한 전반적인 사용자들의 의견을 듣기 위해
+                              시장조사를 선택하기 위한 목적
+                            </p>
+                          </div>
+                        </li>
+                        <li class="info-B">
+                          <div class="guide-item">
+                            <h5>TIME FRAME</h5>
+                            <span>3+n일</span>
+                            <p>
+                              정보 수집 n일 <br />
+                              실행 1일 (온라인 수행 시 제외) <br />
+                              분석 2일
+                            </p>
+                          </div>
+                          <div class="guide-item">
+                            <h5>REQUIRED POSITION</h5>
+                            <span>3명</span>
+                            <p>
+                              메인 컨설턴트(VoC 담당자) 1명 <br />
+                              서포트 컨설턴트(분석 및 정리 등) n명
+                            </p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img src="images/img-012.png" alt="Voice of Customer" />
+            </div>
+
+            <div class="flex-container">
+              <div class="sub-section" id="eyetracking">
+                <h4>Eyetracking</h4>
+                <p>시선추적</p>
+                <div class="content-box">
+                  <ul class="tag-list">
+                    <li>안구측정</li>
+                    <li>시선분석</li>
+                    <li>가상현실</li>
+                    <li>증강현실</li>
+                  </ul>
+                  <p class="description">
+                    시선추적(아이트래킹, eye tracking)은 인간의 시각 행동에 대해
+                    심도있는 이해를 가능하게 하기 위해 눈 움직임(eye
+                    movements)을 측정하는 생리학적 시스템
+                  </p>
+                  <div class="guide">
+                    <button class="guide-toggle">
+                      <span>상세 가이드 확인하기</span>
+                      <img
+                        src="images/arrDown.svg"
+                        alt="펼치기"
+                        class="arrow-icon"
+                      />
+                    </button>
+                    <div class="guide-content">
+                      <ul class="guide-list">
+                        <li class="info-A">
+                          <div class="guide-item">
+                            <h5>SCENARIO 01</h5>
+                            <span>이해</span>
+                            <p>
+                              제품이나 서비스의 초기 개발 단계에서 사용자들의
+                              반응을 파악하여 개발 방향성을 설정하기 위한 목적
+                            </p>
+                          </div>
+                        </li>
+                        <li class="info-B">
+                          <div class="guide-item">
+                            <h5>TIME FRAME</h5>
+                            <span>6일</span>
+                            <p>
+                              준비 3일 <br />
+                              실행 1~2일 <br />
+                              분석 2일
+                            </p>
+                          </div>
+                          <div class="guide-item">
+                            <h5>REQUIRED POSITION</h5>
+                            <span>8+n명</span>
+                            <p>
+                              진행자(모더레이터) 1명 <br />
+                              관찰대상자 5-10명 <br />
+                              서포트 컨설턴트(분석 및 진행 도움) 2명
+                            </p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img src="images/img-013.png" alt="Eyetracking" />
+            </div>
+
+            <div class="flex-container">
+              <div class="sub-section" id="survey">
+                <h4>Survey</h4>
+                <p>설문조사</p>
+                <div class="content-box">
+                  <ul class="tag-list">
+                    <li>질의응답</li>
+                    <li>사용자 의견</li>
+                    <li>선호도</li>
+                  </ul>
+                  <p class="description">
+                    구조적인 형태/질문으로 다수의 사용자에게 동일한 질문을
+                    수행하여 수집하는 방법
+                  </p>
+                  <div class="guide">
+                    <button class="guide-toggle">
+                      <span>상세 가이드 확인하기</span>
+                      <img
+                        src="images/arrDown.svg"
+                        alt="펼치기"
+                        class="arrow-icon"
+                      />
+                    </button>
+                    <div class="guide-content">
+                      <ul class="guide-list">
+                        <li class="info-A">
+                          <div class="guide-item">
+                            <h5>SCENARIO 01</h5>
+                            <span>이해</span>
+                            <p>
+                              서비스가 속한 시장의 현황 및 소비자 행동 등
+                              전반적인 이해를 돕기 위한 목적
+                            </p>
+                          </div>
+                        </li>
+                        <li class="info-B">
+                          <div class="guide-item">
+                            <h5>TIME FRAME</h5>
+                            <span>10일</span>
+                            <p>
+                              계획 및 질문지 작성 3일 <br />
+                              실행 4일 <br />
+                              분석 및 정리 3일
+                            </p>
+                          </div>
+                          <div class="guide-item">
+                            <h5>REQUIRED POSITION</h5>
+                            <span>3명</span>
+                            <p>
+                              실제 사용자(테스트 대상자) n명 <br />
+                              진행자(모더레이터) 1명 <br />
+                              서포터 컨설턴트 (산출물 정리, 설문조사 진행 도움
+                              등) 2명
+                            </p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img src="images/img-014.png" alt="Survey" />
+            </div>
+
+            <div class="flex-container">
+              <div class="sub-section" id="voting">
+                <h4>Voting</h4>
+                <p>투표하기</p>
+                <div class="content-box">
+                  <ul class="tag-list">
+                    <li>Dot Voting</li>
+                    <li>다수결</li>
+                    <li>집단의사결정</li>
+                  </ul>
+                  <p class="description">
+                    집단의 전체적인 선호도를 파악하기 위한 간단한 투표 방법
+                  </p>
+                  <div class="guide">
+                    <button class="guide-toggle">
+                      <span>상세 가이드 확인하기</span>
+                      <img
+                        src="images/arrDown.svg"
+                        alt="펼치기"
+                        class="arrow-icon"
+                      />
+                    </button>
+                    <div class="guide-content">
+                      <ul class="guide-list">
+                        <li class="info-A">
+                          <div class="guide-item">
+                            <h5>SCENARIO 01</h5>
+                            <span>발견</span>
+                            <p>
+                              사용자들의 서비스의 불편사항에 대해 아이디어가
+                              다양하게 나왔을 때 사람들의 투표를 통해 서비스의
+                              불편사항 중 많은 공감을 도출하기 위한 목적
+                            </p>
+                          </div>
+                        </li>
+                        <li class="info-B">
+                          <div class="guide-item">
+                            <h5>TIME FRAME</h5>
+                            <span>1일</span>
+                            <p>진행 및 결과도출 1일</p>
+                          </div>
+                          <div class="guide-item">
+                            <h5>REQUIRED POSITION</h5>
+                            <span>1+n명</span>
+                            <p>
+                              진행자 1명 <br />
+                              투표 참여자 n명
+                            </p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img src="images/img-015.png" alt="Voting" />
+            </div>
+          </div>
+        </section>
+
+        <section id="define" class="define">
+          <div class="container">
+            <h3>Define</h3>
+            <p>
+              수집된 데이터를 분석하고 해결해야 할 문제를 명확히 정의하는
+              단계입니다.
+            </p>
+
+            <div class="flex-container">
+              <div class="sub-section" id="affinity">
+                <h4>Affinity Diagram</h4>
+                <p>
+                  다양한 아이디어와 데이터를 그룹화하여 패턴과 관계를
+                  파악합니다.
+                </p>
+                <div class="content-box">
+                  <ul class="tag-list">
+                    <li>데이터</li>
+                    <li>그룹화</li>
+                    <li>분류</li>
+                    <li>패턴</li>
+                    <li>인사이트</li>
+                    <li>분석</li>
+                  </ul>
+                  <p class="description">
+                    다양한 아이디어와 데이터를 그룹화하여 패턴과 관계를 파악하고
+                    인사이트를 도출하는 연구 방법
+                  </p>
+                  <div class="guide">
+                    <button class="guide-toggle">
+                      <span>상세 가이드 확인하기</span>
+                      <img
+                        src="images/arrDown.svg"
+                        alt="펼치기"
+                        class="arrow-icon"
+                      />
+                    </button>
+                    <div class="guide-content">
+                      <ul class="guide-list">
+                        <li class="info-A">
+                          <div class="guide-item">
+                            <h5>SCENARIO 01</h5>
+                            <span>이해</span>
+                            <p>
+                              다양한 아이디어와 데이터를 그룹화하여 패턴과
+                              관계를 파악하고 인사이트를 도출하는 연구 방법
+                            </p>
+                          </div>
+                        </li>
+                        <li class="info-B">
+                          <div class="guide-item">
+                            <h5>TIME FRAME</h5>
+                            <span>3일</span>
+                            <p>
+                              준비 1일 (데이터 수집 및 정리) <br />분석 1일
+                              (그룹화 및 패턴 분석) <br />정리 1일 (인사이트
+                              도출 및 보고서 작성)
+                            </p>
+                          </div>
+                          <div class="guide-item">
+                            <h5>REQUIRED POSITION</h5>
+                            <span>2명</span>
+                            <p>리서치 담당자 1명 <br />분석가 1명</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img src="images/img-016.png" alt="Affinity Diagram" />
+            </div>
+
+            <div class="flex-container">
+              <div class="sub-section" id="card-sorting">
+                <h4>Card Sorting</h4>
+                <p>
+                  사용자의 인지 모델을 이해하기 위해 정보를 분류하고
+                  구조화합니다.
+                </p>
+                <div class="content-box">
+                  <ul class="tag-list">
+                    <li>카드</li>
+                    <li>분류</li>
+                    <li>구조화</li>
+                    <li>인지</li>
+                    <li>모델</li>
+                    <li>정보</li>
+                  </ul>
+                  <p class="description">
+                    사용자의 인지 모델을 이해하기 위해 정보를 분류하고
+                    구조화하는 연구 방법
+                  </p>
+                  <div class="guide">
+                    <button class="guide-toggle">
+                      <span>상세 가이드 확인하기</span>
+                      <img
+                        src="images/arrDown.svg"
+                        alt="펼치기"
+                        class="arrow-icon"
+                      />
+                    </button>
+                    <div class="guide-content">
+                      <ul class="guide-list">
+                        <li class="info-A">
+                          <div class="guide-item">
+                            <h5>SCENARIO 01</h5>
+                            <span>이해</span>
+                            <p>
+                              사용자의 인지 모델을 이해하기 위해 정보를 분류하고
+                              구조화하는 연구 방법
+                            </p>
+                          </div>
+                        </li>
+                        <li class="info-B">
+                          <div class="guide-item">
+                            <h5>TIME FRAME</h5>
+                            <span>4일</span>
+                            <p>
+                              준비 1일 (카드 작성 및 준비) <br />진행 2일 (분류
+                              작업 및 데이터 수집) <br />분석 1일 (결과 분석 및
+                              구조 설계)
+                            </p>
+                          </div>
+                          <div class="guide-item">
+                            <h5>REQUIRED POSITION</h5>
+                            <span>4명</span>
+                            <p>
+                              UX 디자이너 1명 <br />참여자 2명 <br />관찰자 1명
+                            </p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img src="images/img-017.png" alt="Card Sorting" />
+            </div>
+
+            <div class="flex-container">
+              <div class="sub-section" id="mind-mapping">
+                <h4>Mind Mapping</h4>
+                <p>
+                  아이디어와 개념을 시각적으로 연결하여 전체적인 구조를
+                  파악합니다.
+                </p>
+                <div class="content-box">
+                  <ul class="tag-list">
+                    <li>마인드맵</li>
+                    <li>아이디어</li>
+                    <li>개념</li>
+                    <li>연결</li>
+                    <li>구조</li>
+                    <li>시각화</li>
+                  </ul>
+                  <p class="description">
+                    아이디어와 개념을 시각적으로 연결하여 전체적인 구조를
+                    파악하고 관계성을 분석하는 연구 방법
+                  </p>
+                  <div class="guide">
+                    <button class="guide-toggle">
+                      <span>상세 가이드 확인하기</span>
+                      <img
+                        src="images/arrDown.svg"
+                        alt="펼치기"
+                        class="arrow-icon"
+                      />
+                    </button>
+                    <div class="guide-content">
+                      <ul class="guide-list">
+                        <li class="info-A">
+                          <div class="guide-item">
+                            <h5>SCENARIO 01</h5>
+                            <span>이해</span>
+                            <p>
+                              아이디어와 개념을 시각적으로 연결하여 전체적인
+                              구조를 파악하고 관계성을 분석하는 연구 방법
+                            </p>
+                          </div>
+                        </li>
+                        <li class="info-B">
+                          <div class="guide-item">
+                            <h5>TIME FRAME</h5>
+                            <span>3일</span>
+                            <p>
+                              준비 1일 (주제 선정 및 자료 수집) <br />작성 1일
+                              (마인드맵 작성) <br />분석 1일 (관계성 분석 및
+                              정리)
+                            </p>
+                          </div>
+                          <div class="guide-item">
+                            <h5>REQUIRED POSITION</h5>
+                            <span>2명</span>
+                            <p>기획자 1명 <br />디자이너 1명</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img src="images/img-018.png" alt="Mind Mapping" />
+            </div>
+
+            <div class="flex-container">
+              <div class="sub-section" id="heuristics">
+                <h4>Heuristics</h4>
+                <p>
+                  사용성 평가를 위한 경험적 방법론을 적용하여 문제점을
+                  발견합니다.
+                </p>
+                <div class="content-box">
+                  <ul class="tag-list">
+                    <li>사용성</li>
+                    <li>평가</li>
+                    <li>방법론</li>
+                    <li>문제점</li>
+                    <li>개선</li>
+                    <li>검증</li>
+                  </ul>
+                  <p class="description">
+                    사용성 평가를 위한 경험적 방법론을 적용하여 문제점을
+                    발견하고 개선 방안을 도출하는 연구 방법
+                  </p>
+                  <div class="guide">
+                    <button class="guide-toggle">
+                      <span>상세 가이드 확인하기</span>
+                      <img
+                        src="images/arrDown.svg"
+                        alt="펼치기"
+                        class="arrow-icon"
+                      />
+                    </button>
+                    <div class="guide-content">
+                      <ul class="guide-list">
+                        <li class="info-A">
+                          <div class="guide-item">
+                            <h5>SCENARIO 01</h5>
+                            <span>이해</span>
+                            <p>
+                              사용성 평가를 위한 경험적 방법론을 적용하여
+                              문제점을 발견하고 개선 방안을 도출하는 연구 방법
+                            </p>
+                          </div>
+                        </li>
+                        <li class="info-B">
+                          <div class="guide-item">
+                            <h5>TIME FRAME</h5>
+                            <span>4일</span>
+                            <p>
+                              준비 1일 (평가 기준 설정) <br />평가 2일 (문제점
+                              식별 및 심각도 평가) <br />정리 1일 (개선 방안
+                              도출)
+                            </p>
+                          </div>
+                          <div class="guide-item">
+                            <h5>REQUIRED POSITION</h5>
+                            <span>3명</span>
+                            <p>
+                              UX 전문가 1명 <br />디자이너 1명 <br />개발자 1명
+                            </p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img src="images/img-019.png" alt="Heuristics" />
+            </div>
+
+            <div class="flex-container">
+              <div class="sub-section" id="positioning">
+                <h4>Positioning Map</h4>
+                <p>
+                  제품이나 서비스의 시장 위치를 시각화하여 경쟁 우위를
+                  파악합니다.
+                </p>
+                <div class="content-box">
+                  <ul class="tag-list">
+                    <li>포지셔닝</li>
+                    <li>시장</li>
+                    <li>경쟁</li>
+                    <li>분석</li>
+                    <li>전략</li>
+                    <li>우위</li>
+                  </ul>
+                  <p class="description">
+                    제품이나 서비스의 시장 위치를 시각화하여 경쟁 우위를
+                    파악하고 전략을 수립하는 연구 방법
+                  </p>
+                  <div class="guide">
+                    <button class="guide-toggle">
+                      <span>상세 가이드 확인하기</span>
+                      <img
+                        src="images/arrDown.svg"
+                        alt="펼치기"
+                        class="arrow-icon"
+                      />
+                    </button>
+                    <div class="guide-content">
+                      <ul class="guide-list">
+                        <li class="info-A">
+                          <div class="guide-item">
+                            <h5>SCENARIO 01</h5>
+                            <span>이해</span>
+                            <p>
+                              제품이나 서비스의 시장 위치를 시각화하여 경쟁
+                              우위를 파악하고 전략을 수립하는 연구 방법
+                            </p>
+                          </div>
+                        </li>
+                        <li class="info-B">
+                          <div class="guide-item">
+                            <h5>TIME FRAME</h5>
+                            <span>5일</span>
+                            <p>
+                              준비 2일 (경쟁사 분석 및 데이터 수집) <br />작성
+                              2일 (포지셔닝 맵 작성) <br />분석 1일 (전략 수립)
+                            </p>
+                          </div>
+                          <div class="guide-item">
+                            <h5>REQUIRED POSITION</h5>
+                            <span>4명</span>
+                            <p>
+                              마케터 1명 <br />전략가 1명 <br />분석가 1명
+                              <br />디자이너 1명
+                            </p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img src="images/img-020.png" alt="Positioning Map" />
+            </div>
+          </div>
+        </section>
+
+        <section id="develop" class="develop">
+          <div class="container">
+            <h3>Develop</h3>
+            <p>
+              정의된 문제를 해결하기 위한 솔루션을 개발하고 구현하는 단계입니다.
+            </p>
+
+            <div class="flex-container">
+              <div class="sub-section" id="mental-model">
+                <h4>Mental Model</h4>
+                <p>사용자의 인지 모델을 기반으로 서비스 구조를 설계합니다.</p>
+                <div class="content-box">
+                  <ul class="tag-list">
+                    <li>인지</li>
+                    <li>모델</li>
+                    <li>구조</li>
+                    <li>설계</li>
+                    <li>사용자</li>
+                    <li>분석</li>
+                  </ul>
+                  <p class="description">
+                    사용자의 인지 모델을 기반으로 서비스 구조를 설계하고 구현
+                    방안을 도출하는 연구 방법
+                  </p>
+                  <div class="guide">
+                    <button class="guide-toggle">
+                      <span>상세 가이드 확인하기</span>
+                      <img
+                        src="images/arrDown.svg"
+                        alt="펼치기"
+                        class="arrow-icon"
+                      />
+                    </button>
+                    <div class="guide-content">
+                      <ul class="guide-list">
+                        <li class="info-A">
+                          <div class="guide-item">
+                            <h5>SCENARIO 01</h5>
+                            <span>이해</span>
+                            <p>
+                              사용자의 인지 모델을 기반으로 서비스 구조를
+                              설계하고 구현 방안을 도출하는 연구 방법
+                            </p>
+                          </div>
+                        </li>
+                        <li class="info-B">
+                          <div class="guide-item">
+                            <h5>TIME FRAME</h5>
+                            <span>5일</span>
+                            <p>
+                              준비 1일 (사용자 행동 분석) <br />설계 2일 (인지
+                              모델 구축) <br />구현 2일 (서비스 구조 설계)
+                            </p>
+                          </div>
+                          <div class="guide-item">
+                            <h5>REQUIRED POSITION</h5>
+                            <span>3명</span>
+                            <p>
+                              UX 디자이너 1명 <br />기획자 1명 <br />개발자 1명
+                            </p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img src="images/img-021.png" alt="Mental Model" />
+            </div>
+
+            <div class="flex-container">
+              <div class="sub-section" id="expert-solutions">
+                <h4>Expert Solutions</h4>
+                <p>
+                  전문가의 지식과 경험을 활용하여 최적의 솔루션을 도출합니다.
+                </p>
+                <div class="content-box">
+                  <ul class="tag-list">
+                    <li>전문가</li>
+                    <li>솔루션</li>
+                    <li>지식</li>
+                    <li>경험</li>
+                    <li>최적화</li>
+                    <li>구현</li>
+                  </ul>
+                  <p class="description">
+                    전문가의 지식과 경험을 활용하여 최적의 솔루션을 도출하고
+                    구현 계획을 수립하는 연구 방법
+                  </p>
+                  <div class="guide">
+                    <button class="guide-toggle">
+                      <span>상세 가이드 확인하기</span>
+                      <img
+                        src="images/arrDown.svg"
+                        alt="펼치기"
+                        class="arrow-icon"
+                      />
+                    </button>
+                    <div class="guide-content">
+                      <ul class="guide-list">
+                        <li class="info-A">
+                          <div class="guide-item">
+                            <h5>SCENARIO 01</h5>
+                            <span>이해</span>
+                            <p>
+                              전문가의 지식과 경험을 활용하여 최적의 솔루션을
+                              도출하고 구현 계획을 수립하는 연구 방법
+                            </p>
+                          </div>
+                        </li>
+                        <li class="info-B">
+                          <div class="guide-item">
+                            <h5>TIME FRAME</h5>
+                            <span>4일</span>
+                            <p>
+                              준비 1일 (전문가 선정 및 자료 준비) <br />기획 2일
+                              (솔루션 기획 및 검증) <br />정리 1일 (구현 계획
+                              수립)
+                            </p>
+                          </div>
+                          <div class="guide-item">
+                            <h5>REQUIRED POSITION</h5>
+                            <span>4명</span>
+                            <p>전문가 2명 <br />기획자 1명 <br />개발자 1명</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img src="images/img-022.png" alt="Expert Solutions" />
+            </div>
+          </div>
+        </section>
+
+        <section id="deliver" class="deliver">
+          <div class="container">
+            <h3>Deliver & Validation</h3>
+            <p>개발된 솔루션을 검증하고 최종 결과물을 전달하는 단계입니다.</p>
+
+            <div class="flex-container">
+              <div class="sub-section" id="service-prototyping">
+                <h4>Service Prototyping</h4>
+                <p>서비스의 핵심 가치와 경험을 빠르게 구현하여 검증합니다.</p>
+                <div class="content-box">
+                  <ul class="tag-list">
+                    <li>프로토타입</li>
+                    <li>서비스</li>
+                    <li>구현</li>
+                    <li>검증</li>
+                    <li>피드백</li>
+                    <li>개선</li>
+                  </ul>
+                  <p class="description">
+                    서비스의 핵심 가치와 경험을 빠르게 구현하여 검증하고
+                    피드백을 수집하는 연구 방법
+                  </p>
+                  <div class="guide">
+                    <button class="guide-toggle">
+                      <span>상세 가이드 확인하기</span>
+                      <img
+                        src="images/arrDown.svg"
+                        alt="펼치기"
+                        class="arrow-icon"
+                      />
+                    </button>
+                    <div class="guide-content">
+                      <ul class="guide-list">
+                        <li class="info-A">
+                          <div class="guide-item">
+                            <h5>SCENARIO 01</h5>
+                            <span>이해</span>
+                            <p>
+                              서비스의 핵심 가치와 경험을 빠르게 구현하여
+                              검증하고 피드백을 수집하는 연구 방법
+                            </p>
+                          </div>
+                        </li>
+                        <li class="info-B">
+                          <div class="guide-item">
+                            <h5>TIME FRAME</h5>
+                            <span>5일</span>
+                            <p>
+                              준비 1일 (프로토타입 기획) <br />제작 2일
+                              (프로토타입 구현) <br />테스트 2일 (사용자 테스트
+                              및 피드백)
+                            </p>
+                          </div>
+                          <div class="guide-item">
+                            <h5>REQUIRED POSITION</h5>
+                            <span>4명</span>
+                            <p>
+                              디자이너 1명 <br />개발자 1명 <br />테스터 1명
+                              <br />관찰자 1명
+                            </p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img src="images/img-023.png" alt="Service Prototyping" />
+            </div>
+
+            <div class="flex-container">
+              <div class="sub-section" id="ux-flow">
+                <h4>UX Flow</h4>
+                <p>사용자 경험의 흐름을 설계하고 최적화합니다.</p>
+                <div class="content-box">
+                  <ul class="tag-list">
+                    <li>UX</li>
+                    <li>흐름</li>
+                    <li>설계</li>
+                    <li>최적화</li>
+                    <li>인터랙션</li>
+                    <li>경험</li>
+                  </ul>
+                  <p class="description">
+                    사용자 경험의 흐름을 설계하고 최적화하여 인터랙션을 정의하는
+                    연구 방법
+                  </p>
+                  <div class="guide">
+                    <button class="guide-toggle">
+                      <span>상세 가이드 확인하기</span>
+                      <img
+                        src="images/arrDown.svg"
+                        alt="펼치기"
+                        class="arrow-icon"
+                      />
+                    </button>
+                    <div class="guide-content">
+                      <ul class="guide-list">
+                        <li class="info-A">
+                          <div class="guide-item">
+                            <h5>SCENARIO 01</h5>
+                            <span>이해</span>
+                            <p>
+                              사용자 경험의 흐름을 설계하고 최적화하여
+                              인터랙션을 정의하는 연구 방법
+                            </p>
+                          </div>
+                        </li>
+                        <li class="info-B">
+                          <div class="guide-item">
+                            <h5>TIME FRAME</h5>
+                            <span>4일</span>
+                            <p>
+                              준비 1일 (사용자 여정 분석) <br />설계 2일 (흐름
+                              설계 및 최적화) <br />정리 1일 (구현 가이드 작성)
+                            </p>
+                          </div>
+                          <div class="guide-item">
+                            <h5>REQUIRED POSITION</h5>
+                            <span>3명</span>
+                            <p>
+                              UX 디자이너 1명 <br />기획자 1명 <br />개발자 1명
+                            </p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img src="images/img-024.png" alt="UX Flow" />
+            </div>
+
+            <div class="flex-container">
+              <div class="sub-section" id="flow-chart">
+                <h4>Flow Chart</h4>
+                <p>서비스의 프로세스와 로직을 시각화하여 명확히 합니다.</p>
+                <div class="content-box">
+                  <ul class="tag-list">
+                    <li>플로우</li>
+                    <li>차트</li>
+                    <li>프로세스</li>
+                    <li>로직</li>
+                    <li>시각화</li>
+                    <li>문서화</li>
+                  </ul>
+                  <p class="description">
+                    서비스의 프로세스와 로직을 시각화하여 명확히 하고 문서화하는
+                    연구 방법
+                  </p>
+                  <div class="guide">
+                    <button class="guide-toggle">
+                      <span>상세 가이드 확인하기</span>
+                      <img
+                        src="images/arrDown.svg"
+                        alt="펼치기"
+                        class="arrow-icon"
+                      />
+                    </button>
+                    <div class="guide-content">
+                      <ul class="guide-list">
+                        <li class="info-A">
+                          <div class="guide-item">
+                            <h5>SCENARIO 01</h5>
+                            <span>이해</span>
+                            <p>
+                              서비스의 프로세스와 로직을 시각화하여 명확히 하고
+                              문서화하는 연구 방법
+                            </p>
+                          </div>
+                        </li>
+                        <li class="info-B">
+                          <div class="guide-item">
+                            <h5>TIME FRAME</h5>
+                            <span>3일</span>
+                            <p>
+                              준비 1일 (프로세스 분석) <br />작성 1일 (플로우
+                              차트 작성) <br />검증 1일 (로직 검증 및 문서화)
+                            </p>
+                          </div>
+                          <div class="guide-item">
+                            <h5>REQUIRED POSITION</h5>
+                            <span>2명</span>
+                            <p>기획자 1명 <br />개발자 1명</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img src="images/img-025.png" alt="Flow Chart" />
+            </div>
+
+            <div class="flex-container">
+              <div class="sub-section" id="ab-testing">
+                <h4>A/B Testing</h4>
+                <p>다양한 버전을 비교하여 최적의 솔루션을 도출합니다.</p>
+                <div class="content-box">
+                  <ul class="tag-list">
+                    <li>A/B</li>
+                    <li>테스트</li>
+                    <li>비교</li>
+                    <li>최적화</li>
+                    <li>데이터</li>
+                    <li>분석</li>
+                  </ul>
+                  <p class="description">
+                    다양한 버전을 비교하여 최적의 솔루션을 도출하고 데이터를
+                    기반으로 분석하는 연구 방법
+                  </p>
+                  <div class="guide">
+                    <button class="guide-toggle">
+                      <span>상세 가이드 확인하기</span>
+                      <img
+                        src="images/arrDown.svg"
+                        alt="펼치기"
+                        class="arrow-icon"
+                      />
+                    </button>
+                    <div class="guide-content">
+                      <ul class="guide-list">
+                        <li class="info-A">
+                          <div class="guide-item">
+                            <h5>SCENARIO 01</h5>
+                            <span>이해</span>
+                            <p>
+                              다양한 버전을 비교하여 최적의 솔루션을 도출하고
+                              데이터를 기반으로 분석하는 연구 방법
+                            </p>
+                          </div>
+                        </li>
+                        <li class="info-B">
+                          <div class="guide-item">
+                            <h5>TIME FRAME</h5>
+                            <span>7일</span>
+                            <p>
+                              준비 2일 (테스트 설계 및 버전 준비) <br />진행 3일
+                              (데이터 수집) <br />분석 2일 (결과 분석 및 최적화)
+                            </p>
+                          </div>
+                          <div class="guide-item">
+                            <h5>REQUIRED POSITION</h5>
+                            <span>4명</span>
+                            <p>
+                              데이터 분석가 1명 <br />개발자 1명 <br />디자이너
+                              1명 <br />기획자 1명
+                            </p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img src="images/img-026.png" alt="A/B Testing" />
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
 
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 컨설팅 문서. All rights reserved.</p>
-        </div>
+      <div class="container">
+        <p>&copy; 2024 컨설팅 문서. All rights reserved.</p>
+      </div>
     </footer>
 
     <script src="js/main.js"></script>
-</body>
-</html> 
+  </body>
+</html>
