@@ -347,17 +347,14 @@ section > .container > p {
   flex-wrap: wrap; /* 화면이 작아지면 줄바꿈되도록 */
 }
 .flex-container .sub-section {
-  flex: 1 1 300px; /* 글 영역 줄어들되 최소 300px 유지 */
+  width: 100%;
   min-width: 250px;
 }
 .flex-container img {
-  flex: 1 1 300px; /* 글과 동일하게 줄어듦 */
-  width: auto; /* flex-basis 기준으로 크기 조정 */
-  height: auto;
-  min-width: 200px; /* 최소 크기 지정 */
-  max-width: 400px; /* 너무 커지지 않게 제한 */
-  object-fit: contain;
-  align-self: center; /* 수직 가운데 정렬 (선택사항) */
+  width: 20rem; /* 기본 크기 */
+  max-width: 90%; /* 화면이 좁으면 부모 폭 기준으로 줄어듦 */
+  height: auto; /* 비율 유지 */
+  object-fit: contain; /* 이미지 왜곡 방지 */
 }
 
 .sub-section {
