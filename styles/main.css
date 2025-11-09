@@ -349,8 +349,10 @@ section > .container > p {
   padding-top: 60px;
 }
 .flex-container img {
-  width: 400px;
-  height: fit-content;
+  width: 20rem; /* 기본 크기 */
+  max-width: 90%; /* 화면이 좁으면 부모 폭 기준으로 줄어듦 */
+  height: auto; /* 비율 유지 */
+  object-fit: contain; /* 이미지 왜곡 방지 */
 }
 
 .sub-section {

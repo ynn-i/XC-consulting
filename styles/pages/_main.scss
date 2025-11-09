@@ -121,7 +121,7 @@
   flex-wrap: wrap; /* 화면이 작아지면 줄바꿈되도록 */
 
   .sub-section {
-    width: 100%;
+    flex: 1 0 250px;
     min-width: 250px;
   }
 
